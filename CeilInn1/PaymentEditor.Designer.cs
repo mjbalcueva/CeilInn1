@@ -69,45 +69,42 @@
             // 
             // txtReceiptNumber
             // 
-            this.txtReceiptNumber.Location = new System.Drawing.Point(116, 578);
-            this.txtReceiptNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReceiptNumber.Location = new System.Drawing.Point(87, 470);
             this.txtReceiptNumber.Name = "txtReceiptNumber";
-            this.txtReceiptNumber.Size = new System.Drawing.Size(80, 22);
+            this.txtReceiptNumber.Size = new System.Drawing.Size(61, 20);
             this.txtReceiptNumber.TabIndex = 46;
             // 
             // txtAccountNumber
             // 
-            this.txtAccountNumber.Location = new System.Drawing.Point(173, 140);
-            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountNumber.Location = new System.Drawing.Point(130, 114);
             this.txtAccountNumber.Name = "txtAccountNumber";
-            this.txtAccountNumber.Size = new System.Drawing.Size(83, 22);
+            this.txtAccountNumber.Size = new System.Drawing.Size(63, 20);
             this.txtAccountNumber.TabIndex = 31;
+            this.txtAccountNumber.Leave += new System.EventHandler(this.txtAccountNumber_Leave);
             // 
             // txtEmployeeNumber
             // 
-            this.txtEmployeeNumber.Location = new System.Drawing.Point(173, 80);
-            this.txtEmployeeNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeNumber.Location = new System.Drawing.Point(130, 65);
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
-            this.txtEmployeeNumber.Size = new System.Drawing.Size(83, 22);
+            this.txtEmployeeNumber.Size = new System.Drawing.Size(63, 20);
             this.txtEmployeeNumber.TabIndex = 28;
+            this.txtEmployeeNumber.Leave += new System.EventHandler(this.txtEmployeeNumber_Leave);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(-1, 545);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(-1, 443);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(392, 16);
+            this.label11.Size = new System.Drawing.Size(337, 13);
             this.label11.TabIndex = 39;
             this.label11.Text = "_______________________________________________________";
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(361, 576);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(271, 468);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 28);
+            this.btnCancel.Size = new System.Drawing.Size(66, 23);
             this.btnCancel.TabIndex = 42;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -115,170 +112,152 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(267, 576);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Location = new System.Drawing.Point(200, 468);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(87, 28);
+            this.btnOK.Size = new System.Drawing.Size(65, 23);
             this.btnOK.TabIndex = 41;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // txtAccountDetails
             // 
-            this.txtAccountDetails.Location = new System.Drawing.Point(173, 172);
-            this.txtAccountDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountDetails.Location = new System.Drawing.Point(130, 140);
             this.txtAccountDetails.Name = "txtAccountDetails";
-            this.txtAccountDetails.Size = new System.Drawing.Size(265, 22);
+            this.txtAccountDetails.Size = new System.Drawing.Size(200, 20);
             this.txtAccountDetails.TabIndex = 45;
             // 
             // lblAccountNumber
             // 
             this.lblAccountNumber.AutoSize = true;
-            this.lblAccountNumber.Location = new System.Drawing.Point(72, 144);
-            this.lblAccountNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAccountNumber.Location = new System.Drawing.Point(54, 117);
             this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(68, 16);
+            this.lblAccountNumber.Size = new System.Drawing.Size(60, 13);
             this.lblAccountNumber.TabIndex = 30;
             this.lblAccountNumber.Text = "Account #:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 112);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(11, 91);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(385, 16);
+            this.label6.Size = new System.Drawing.Size(320, 13);
             this.label6.TabIndex = 29;
             this.label6.Text = "Processed for Customer _________________________________";
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(265, 80);
-            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeName.Location = new System.Drawing.Point(199, 65);
             this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.Size = new System.Drawing.Size(173, 22);
+            this.txtEmployeeName.Size = new System.Drawing.Size(131, 20);
             this.txtEmployeeName.TabIndex = 43;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(72, 84);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(54, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 16);
+            this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 27;
             this.label4.Text = "Employee #:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 52);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(11, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(388, 16);
+            this.label3.Size = new System.Drawing.Size(322, 13);
             this.label3.TabIndex = 26;
             this.label3.Text = "Payment Processed by __________________________________";
             // 
             // dtpPaymentDate
             // 
-            this.dtpPaymentDate.Location = new System.Drawing.Point(173, 23);
-            this.dtpPaymentDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpPaymentDate.Location = new System.Drawing.Point(130, 19);
             this.dtpPaymentDate.Name = "dtpPaymentDate";
-            this.dtpPaymentDate.Size = new System.Drawing.Size(265, 22);
+            this.dtpPaymentDate.Size = new System.Drawing.Size(200, 20);
             this.dtpPaymentDate.TabIndex = 25;
             // 
             // lblPaymentDate
             // 
             this.lblPaymentDate.AutoSize = true;
-            this.lblPaymentDate.Location = new System.Drawing.Point(15, 23);
-            this.lblPaymentDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPaymentDate.Location = new System.Drawing.Point(11, 19);
             this.lblPaymentDate.Name = "lblPaymentDate";
-            this.lblPaymentDate.Size = new System.Drawing.Size(95, 16);
+            this.lblPaymentDate.Size = new System.Drawing.Size(77, 13);
             this.lblPaymentDate.TabIndex = 24;
             this.lblPaymentDate.Text = "Payment Date:";
             // 
             // lblReceiptNumber
             // 
             this.lblReceiptNumber.AutoSize = true;
-            this.lblReceiptNumber.Location = new System.Drawing.Point(15, 582);
-            this.lblReceiptNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReceiptNumber.Location = new System.Drawing.Point(11, 473);
             this.lblReceiptNumber.Name = "lblReceiptNumber";
-            this.lblReceiptNumber.Size = new System.Drawing.Size(67, 16);
+            this.lblReceiptNumber.Size = new System.Drawing.Size(57, 13);
             this.lblReceiptNumber.TabIndex = 40;
             this.lblReceiptNumber.Text = "Receipt #:";
             // 
             // lblRoomOccupiedFrom
             // 
             this.lblRoomOccupiedFrom.AutoSize = true;
-            this.lblRoomOccupiedFrom.Location = new System.Drawing.Point(15, 213);
-            this.lblRoomOccupiedFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRoomOccupiedFrom.Location = new System.Drawing.Point(11, 173);
             this.lblRoomOccupiedFrom.Name = "lblRoomOccupiedFrom";
-            this.lblRoomOccupiedFrom.Size = new System.Drawing.Size(142, 16);
+            this.lblRoomOccupiedFrom.Size = new System.Drawing.Size(113, 13);
             this.lblRoomOccupiedFrom.TabIndex = 47;
             this.lblRoomOccupiedFrom.Text = "Room Occupied From:";
             // 
             // dtpFirstDateOccupied
             // 
-            this.dtpFirstDateOccupied.Location = new System.Drawing.Point(173, 209);
-            this.dtpFirstDateOccupied.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFirstDateOccupied.Location = new System.Drawing.Point(130, 170);
             this.dtpFirstDateOccupied.Name = "dtpFirstDateOccupied";
-            this.dtpFirstDateOccupied.Size = new System.Drawing.Size(265, 22);
+            this.dtpFirstDateOccupied.Size = new System.Drawing.Size(200, 20);
             this.dtpFirstDateOccupied.TabIndex = 48;
             // 
             // dtpLastDateOccupied
             // 
-            this.dtpLastDateOccupied.Location = new System.Drawing.Point(173, 246);
-            this.dtpLastDateOccupied.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpLastDateOccupied.Location = new System.Drawing.Point(130, 200);
             this.dtpLastDateOccupied.Name = "dtpLastDateOccupied";
-            this.dtpLastDateOccupied.Size = new System.Drawing.Size(265, 22);
+            this.dtpLastDateOccupied.Size = new System.Drawing.Size(200, 20);
             this.dtpLastDateOccupied.TabIndex = 50;
             // 
             // lblLastDateOccupied
             // 
             this.lblLastDateOccupied.AutoSize = true;
-            this.lblLastDateOccupied.Location = new System.Drawing.Point(131, 246);
-            this.lblLastDateOccupied.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLastDateOccupied.Location = new System.Drawing.Point(98, 200);
             this.lblLastDateOccupied.Name = "lblLastDateOccupied";
-            this.lblLastDateOccupied.Size = new System.Drawing.Size(27, 16);
+            this.lblLastDateOccupied.Size = new System.Drawing.Size(23, 13);
             this.lblLastDateOccupied.TabIndex = 49;
             this.lblLastDateOccupied.Text = "To:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 315);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(11, 256);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 16);
+            this.label1.Size = new System.Drawing.Size(321, 13);
             this.label1.TabIndex = 51;
             this.label1.Text = "Payment _____________________________________________";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 290);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(172, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 16);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 52;
             this.label2.Text = "Total Nights:";
             // 
             // txtTotalNights
             // 
-            this.txtTotalNights.Location = new System.Drawing.Point(325, 287);
-            this.txtTotalNights.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalNights.Location = new System.Drawing.Point(244, 233);
             this.txtTotalNights.Name = "txtTotalNights";
-            this.txtTotalNights.Size = new System.Drawing.Size(63, 22);
+            this.txtTotalNights.Size = new System.Drawing.Size(48, 20);
             this.txtTotalNights.TabIndex = 53;
             this.txtTotalNights.Text = "1";
             this.txtTotalNights.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAmountCharged
             // 
-            this.txtAmountCharged.Location = new System.Drawing.Point(324, 348);
-            this.txtAmountCharged.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAmountCharged.Location = new System.Drawing.Point(243, 283);
             this.txtAmountCharged.Name = "txtAmountCharged";
-            this.txtAmountCharged.Size = new System.Drawing.Size(64, 22);
+            this.txtAmountCharged.Size = new System.Drawing.Size(49, 20);
             this.txtAmountCharged.TabIndex = 55;
             this.txtAmountCharged.Text = "0.00";
             this.txtAmountCharged.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -286,19 +265,17 @@
             // lblAmountCharged
             // 
             this.lblAmountCharged.AutoSize = true;
-            this.lblAmountCharged.Location = new System.Drawing.Point(225, 352);
-            this.lblAmountCharged.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAmountCharged.Location = new System.Drawing.Point(169, 286);
             this.lblAmountCharged.Name = "lblAmountCharged";
-            this.lblAmountCharged.Size = new System.Drawing.Size(88, 16);
+            this.lblAmountCharged.Size = new System.Drawing.Size(71, 13);
             this.lblAmountCharged.TabIndex = 54;
             this.lblAmountCharged.Text = "Amt Charged:";
             // 
             // txtTaxRate
             // 
-            this.txtTaxRate.Location = new System.Drawing.Point(309, 453);
-            this.txtTaxRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaxRate.Location = new System.Drawing.Point(232, 368);
             this.txtTaxRate.Name = "txtTaxRate";
-            this.txtTaxRate.Size = new System.Drawing.Size(79, 22);
+            this.txtTaxRate.Size = new System.Drawing.Size(60, 20);
             this.txtTaxRate.TabIndex = 57;
             this.txtTaxRate.Text = "7.70";
             this.txtTaxRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -306,19 +283,17 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(204, 457);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(153, 371);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 16);
+            this.label7.Size = new System.Drawing.Size(54, 13);
             this.label7.TabIndex = 56;
             this.label7.Text = "Tax Rate:";
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(212, 412);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalculate.Location = new System.Drawing.Point(159, 335);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(177, 28);
+            this.btnCalculate.Size = new System.Drawing.Size(133, 23);
             this.btnCalculate.TabIndex = 58;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -326,10 +301,9 @@
             // 
             // txtTotalAmountPaid
             // 
-            this.txtTotalAmountPaid.Location = new System.Drawing.Point(309, 517);
-            this.txtTotalAmountPaid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalAmountPaid.Location = new System.Drawing.Point(232, 420);
             this.txtTotalAmountPaid.Name = "txtTotalAmountPaid";
-            this.txtTotalAmountPaid.Size = new System.Drawing.Size(79, 22);
+            this.txtTotalAmountPaid.Size = new System.Drawing.Size(60, 20);
             this.txtTotalAmountPaid.TabIndex = 62;
             this.txtTotalAmountPaid.Text = "0.00";
             this.txtTotalAmountPaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -337,19 +311,17 @@
             // lblAmountPaid
             // 
             this.lblAmountPaid.AutoSize = true;
-            this.lblAmountPaid.Location = new System.Drawing.Point(208, 521);
-            this.lblAmountPaid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAmountPaid.Location = new System.Drawing.Point(156, 423);
             this.lblAmountPaid.Name = "lblAmountPaid";
-            this.lblAmountPaid.Size = new System.Drawing.Size(86, 16);
+            this.lblAmountPaid.Size = new System.Drawing.Size(70, 13);
             this.lblAmountPaid.TabIndex = 61;
             this.lblAmountPaid.Text = "Amount Paid:";
             // 
             // txtTaxAmount
             // 
-            this.txtTaxAmount.Location = new System.Drawing.Point(309, 485);
-            this.txtTaxAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaxAmount.Location = new System.Drawing.Point(232, 394);
             this.txtTaxAmount.Name = "txtTaxAmount";
-            this.txtTaxAmount.Size = new System.Drawing.Size(79, 22);
+            this.txtTaxAmount.Size = new System.Drawing.Size(60, 20);
             this.txtTaxAmount.TabIndex = 60;
             this.txtTaxAmount.Text = "0.00";
             this.txtTaxAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -357,39 +329,35 @@
             // lblTaxAmount
             // 
             this.lblTaxAmount.AutoSize = true;
-            this.lblTaxAmount.Location = new System.Drawing.Point(204, 489);
-            this.lblTaxAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaxAmount.Location = new System.Drawing.Point(153, 397);
             this.lblTaxAmount.Name = "lblTaxAmount";
-            this.lblTaxAmount.Size = new System.Drawing.Size(81, 16);
+            this.lblTaxAmount.Size = new System.Drawing.Size(67, 13);
             this.lblTaxAmount.TabIndex = 59;
             this.lblTaxAmount.Text = "Tax Amount:";
             // 
             // lblPercent
             // 
             this.lblPercent.AutoSize = true;
-            this.lblPercent.Location = new System.Drawing.Point(393, 457);
-            this.lblPercent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPercent.Location = new System.Drawing.Point(295, 371);
             this.lblPercent.Name = "lblPercent";
-            this.lblPercent.Size = new System.Drawing.Size(19, 16);
+            this.lblPercent.Size = new System.Drawing.Size(15, 13);
             this.lblPercent.TabIndex = 63;
             this.lblPercent.Text = "%";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(393, 352);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(295, 286);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 16);
+            this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 64;
             this.label8.Text = "/night";
             // 
             // txtSubTotal
             // 
-            this.txtSubTotal.Location = new System.Drawing.Point(324, 380);
-            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSubTotal.Location = new System.Drawing.Point(243, 309);
             this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(64, 22);
+            this.txtSubTotal.Size = new System.Drawing.Size(49, 20);
             this.txtSubTotal.TabIndex = 66;
             this.txtSubTotal.Text = "0.00";
             this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -397,19 +365,17 @@
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
-            this.lblSubTotal.Location = new System.Drawing.Point(225, 384);
-            this.lblSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubTotal.Location = new System.Drawing.Point(169, 312);
             this.lblSubTotal.Name = "lblSubTotal";
-            this.lblSubTotal.Size = new System.Drawing.Size(69, 16);
+            this.lblSubTotal.Size = new System.Drawing.Size(56, 13);
             this.lblSubTotal.TabIndex = 65;
             this.lblSubTotal.Text = "Sub-Total:";
             // 
             // txtPhoneUse
             // 
-            this.txtPhoneUse.Location = new System.Drawing.Point(116, 348);
-            this.txtPhoneUse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneUse.Location = new System.Drawing.Point(87, 283);
             this.txtPhoneUse.Name = "txtPhoneUse";
-            this.txtPhoneUse.Size = new System.Drawing.Size(64, 22);
+            this.txtPhoneUse.Size = new System.Drawing.Size(49, 20);
             this.txtPhoneUse.TabIndex = 68;
             this.txtPhoneUse.Text = "0.00";
             this.txtPhoneUse.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -417,20 +383,19 @@
             // lblPhoneUse
             // 
             this.lblPhoneUse.AutoSize = true;
-            this.lblPhoneUse.Location = new System.Drawing.Point(17, 352);
-            this.lblPhoneUse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhoneUse.Location = new System.Drawing.Point(13, 286);
             this.lblPhoneUse.Name = "lblPhoneUse";
-            this.lblPhoneUse.Size = new System.Drawing.Size(77, 16);
+            this.lblPhoneUse.Size = new System.Drawing.Size(63, 13);
             this.lblPhoneUse.TabIndex = 67;
             this.lblPhoneUse.Text = "Phone Use:";
             // 
             // PaymentEditor
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(465, 624);
+            this.ClientSize = new System.Drawing.Size(349, 507);
             this.Controls.Add(this.txtPhoneUse);
             this.Controls.Add(this.lblPhoneUse);
             this.Controls.Add(this.txtSubTotal);
@@ -469,12 +434,12 @@
             this.Controls.Add(this.lblPaymentDate);
             this.Controls.Add(this.lblReceiptNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PaymentEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Payment Editor";
+            this.Load += new System.EventHandler(this.PaymentEditor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
