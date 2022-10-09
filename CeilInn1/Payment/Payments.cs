@@ -8,10 +8,11 @@ namespace CeilInn1
 {
     public partial class Payments : Form
     {
-        public Payments()
-        {
-            InitializeComponent();
-        }
+        private const string PathPayments = @"assets\Payments.pmt";
+        private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathEmployees = @"assets\Employees.mpl";
+
+        public Payments() => InitializeComponent();
 
         private void ShowPayments()
         {
@@ -23,11 +24,11 @@ namespace CeilInn1
             string strEmployee = "", strCustomer = "";
             Collection<Payment> payments = new Collection<Payment>();
             Collection<Customer> customers = new Collection<Customer>();
-            string strPaymentsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
-            string strCustomersFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
-            string strEmployeesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strPaymentsFile = PathPayments;
+            string strCustomersFile = PathCustomers;
+            string strEmployeesFile = PathEmployees;
 
-            if (File.Exists(strPaymentsFile) == true)
+            if (File.Exists(strPaymentsFile))
             {
                 using (FileStream fsPayments = new FileStream(strPaymentsFile,
                                                               FileMode.Open,
@@ -91,21 +92,18 @@ namespace CeilInn1
             }
         }
 
-        private void Payments_Load(object sender, EventArgs e)
-        {
-            ShowPayments();
-        }
+        private void Payments_Load(object sender, EventArgs e) => ShowPayments();
 
-        private void btnNewPayment_Click(object sender, EventArgs e)
+        private void BtnNewPayment_Click(object sender, EventArgs e)
         {
             PaymentEditor editor = new PaymentEditor();
             BinaryFormatter bfPayments = new BinaryFormatter();
             Collection<Payment> payments = new Collection<Payment>();
-            string strPaymentsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
+            string strPaymentsFile = PathPayments;
 
-            if (editor.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (editor.ShowDialog() == DialogResult.OK)
             {
-                if (File.Exists(strPaymentsFile) == true)
+                if (File.Exists(strPaymentsFile))
                 {
                     using (FileStream fsPayments = new FileStream(strPaymentsFile,
                                                                     FileMode.Open,
@@ -115,21 +113,22 @@ namespace CeilInn1
                     }
                 }
 
-                Payment pmt = new Payment();
-
-                pmt.ReceiptNumber = int.Parse(editor.txtReceiptNumber.Text);
-                pmt.EmployeeNumber = editor.txtEmployeeNumber.Text;
-                pmt.PaymentDate = editor.dtpPaymentDate.Value;
-                pmt.AccountNumber = editor.txtAccountNumber.Text;
-                pmt.FirstDayOccupied = editor.dtpFirstDateOccupied.Value;
-                pmt.LastDayOccupied = editor.dtpLastDateOccupied.Value;
-                pmt.TotalNights = int.Parse(editor.txtTotalNights.Text);
-                pmt.AmountCharged = double.Parse(editor.txtAmountCharged.Text);
-                pmt.PhoneUse = double.Parse(editor.txtPhoneUse.Text);
-                pmt.SubTotal = double.Parse(editor.txtSubTotal.Text);
-                pmt.TaxRate = double.Parse(editor.txtTaxRate.Text);
-                pmt.TaxAmount = double.Parse(editor.txtTaxAmount.Text);
-                pmt.TotalAmountPaid = double.Parse(editor.txtTotalAmountPaid.Text);
+                Payment pmt = new Payment
+                {
+                    ReceiptNumber = int.Parse(editor.txtReceiptNumber.Text),
+                    EmployeeNumber = editor.txtEmployeeNumber.Text,
+                    PaymentDate = editor.dtpPaymentDate.Value,
+                    AccountNumber = editor.txtAccountNumber.Text,
+                    FirstDayOccupied = editor.dtpFirstDateOccupied.Value,
+                    LastDayOccupied = editor.dtpLastDateOccupied.Value,
+                    TotalNights = int.Parse(editor.txtTotalNights.Text),
+                    AmountCharged = double.Parse(editor.txtAmountCharged.Text),
+                    PhoneUse = double.Parse(editor.txtPhoneUse.Text),
+                    SubTotal = double.Parse(editor.txtSubTotal.Text),
+                    TaxRate = double.Parse(editor.txtTaxRate.Text),
+                    TaxAmount = double.Parse(editor.txtTaxAmount.Text),
+                    TotalAmountPaid = double.Parse(editor.txtTotalAmountPaid.Text)
+                };
 
                 payments.Add(pmt);
 
@@ -144,9 +143,6 @@ namespace CeilInn1
             ShowPayments();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

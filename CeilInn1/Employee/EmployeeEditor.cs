@@ -4,9 +4,6 @@ namespace CeilInn1
 {
     public partial class EmployeeEditor : Form
     {
-        public EmployeeEditor()
-        {
-            InitializeComponent();
-        }
+        public EmployeeEditor() => InitializeComponent();
     }
 }

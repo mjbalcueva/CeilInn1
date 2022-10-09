@@ -8,18 +8,17 @@ namespace CeilInn1
 {
     public partial class Rooms : Form
     {
-        public Rooms()
-        {
-            InitializeComponent();
-        }
+        private const string PathRooms = @"assets\Rooms.rms";
+
+        public Rooms() => InitializeComponent();
 
         private void ShowRooms()
         {
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -44,20 +43,17 @@ namespace CeilInn1
             }
         }
 
-        private void Rooms_Load(object sender, EventArgs e)
-        {
-            ShowRooms();
-        }
+        private void Rooms_Load(object sender, EventArgs e) => ShowRooms();
 
-        private void btnNewRoom_Click(object sender, EventArgs e)
+        private void BtnNewRoom_Click(object sender, EventArgs e)
         {
             RoomEditor editor = new RoomEditor();
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                         FileMode.Open,
@@ -70,13 +66,14 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Room rm = new Room();
-
-                rm.RoomNumber = editor.txtRoomNumber.Text;
-                rm.RoomType = editor.cbxRoomTypes.Text;
-                rm.BedType = editor.cbxBedTypes.Text;
-                rm.Rate = double.Parse(editor.txtRate.Text);
-                rm.OccupancyStatus = editor.cbxOccupanciesStatus.Text;
+                Room rm = new Room
+                {
+                    RoomNumber = editor.txtRoomNumber.Text,
+                    RoomType = editor.cbxRoomTypes.Text,
+                    BedType = editor.cbxBedTypes.Text,
+                    Rate = double.Parse(editor.txtRate.Text),
+                    OccupancyStatus = editor.cbxOccupanciesStatus.Text
+                };
                 lstRooms.Add(rm);
 
                 using (FileStream fsCustomers = new FileStream(strFileName,
@@ -92,9 +89,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

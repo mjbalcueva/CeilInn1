@@ -53,7 +53,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // btnNewRoom
             // 
@@ -63,7 +63,7 @@
             this.btnNewRoom.TabIndex = 7;
             this.btnNewRoom.Text = "New Room...";
             this.btnNewRoom.UseVisualStyleBackColor = true;
-            this.btnNewRoom.Click += new System.EventHandler(this.btnNewRoom_Click);
+            this.btnNewRoom.Click += new System.EventHandler(this.BtnNewRoom_Click);
             // 
             // lvwRooms
             // 
