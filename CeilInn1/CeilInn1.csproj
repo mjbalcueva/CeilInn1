@@ -119,6 +119,12 @@
     <Compile Include="Room\Rooms.Designer.cs">
       <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CeilInn.resx">
+      <DependentUpon>CeilInn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\CustomerEditor.resx">
+      <DependentUpon>CustomerEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customers\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
