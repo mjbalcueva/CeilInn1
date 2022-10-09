@@ -45,6 +45,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnNewEmployee
             // 
@@ -54,6 +55,7 @@
             this.btnNewEmployee.TabIndex = 7;
             this.btnNewEmployee.Text = "New Employee...";
             this.btnNewEmployee.UseVisualStyleBackColor = true;
+            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
             // 
             // lvwEmployees
             // 
@@ -103,6 +105,7 @@
             this.Name = "Employees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Employees";
+            this.Load += new System.EventHandler(this.Employees_Load);
             this.ResumeLayout(false);
 
         }
