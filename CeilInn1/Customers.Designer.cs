@@ -90,6 +90,7 @@
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnNewCustomer
             // 
@@ -99,6 +100,7 @@
             this.btnNewCustomer.TabIndex = 4;
             this.btnNewCustomer.Text = "New Customer...";
             this.btnNewCustomer.UseVisualStyleBackColor = true;
+            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
             // colLastName
             // 
@@ -117,7 +119,9 @@
             this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Customers Records";
+            this.Load += new System.EventHandler(this.Customers_Load);
             this.ResumeLayout(false);
+
         }
 
         #endregion
