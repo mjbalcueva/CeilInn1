@@ -24,7 +24,7 @@ namespace CeilInn1
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
             string strOccupanciesFile = PathOccupancies;
 
-            if (File.Exists(strOccupanciesFile) == true)
+            if (File.Exists(strOccupanciesFile))
             {
                 using (FileStream fsOccupancies = new FileStream(strOccupanciesFile,
                                                          FileMode.Open,
@@ -48,7 +48,7 @@ namespace CeilInn1
             BinaryFormatter bfEmployees = new BinaryFormatter();
             string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -71,7 +71,7 @@ namespace CeilInn1
             Collection<Customer> lstCustomers = new Collection<Customer>();
             string strFileName = PathCustomers;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsCustomers = new FileStream(strFileName,
                                                                 FileMode.Open,
@@ -94,7 +94,7 @@ namespace CeilInn1
             Collection<Room> lstRooms = new Collection<Room>();
             string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                                FileMode.Open,

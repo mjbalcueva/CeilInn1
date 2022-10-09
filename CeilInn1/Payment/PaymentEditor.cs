@@ -35,7 +35,7 @@ namespace CeilInn1
             Collection<Payment> lstPaymentes = new Collection<Payment>();
             string strFileName = PathPayments;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsPayments = new FileStream(strFileName,
                                                          FileMode.Open,
@@ -59,7 +59,7 @@ namespace CeilInn1
             BinaryFormatter bfEmployees = new BinaryFormatter();
             string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
