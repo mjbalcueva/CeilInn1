@@ -64,12 +64,13 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Employee clerk = new Employee();
-
-                clerk.EmployeeNumber = editor.txtEmployeeNumber.Text;
-                clerk.FirstName = editor.txtFirstName.Text;
-                clerk.LastName = editor.txtLastName.Text;
-                clerk.Title = editor.txtTitle.Text;
+                Employee clerk = new Employee
+                {
+                    EmployeeNumber = editor.txtEmployeeNumber.Text,
+                    FirstName = editor.txtFirstName.Text,
+                    LastName = editor.txtLastName.Text,
+                    Title = editor.txtTitle.Text
+                };
 
                 lstEmployees.Add(clerk);
 

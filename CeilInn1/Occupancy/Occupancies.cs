@@ -128,15 +128,16 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Occupancy occupy = new Occupancy();
-
-                occupy.OccupancyNumber = int.Parse(editor.txtOccupancyNumber.Text);
-                occupy.DateOccupied = editor.dtpDateOccupied.Value;
-                occupy.ProcessedBy = editor.txtEmployeeNumber.Text;
-                occupy.ProcessedFor = editor.txtAccountNumber.Text;
-                occupy.RoomOccupied = editor.txtRoomNumber.Text;
-                occupy.RateApplied = double.Parse(editor.txtRateApplied.Text);
-                occupy.PhoneUse = double.Parse(editor.txtPhoneUse.Text);
+                Occupancy occupy = new Occupancy
+                {
+                    OccupancyNumber = int.Parse(editor.txtOccupancyNumber.Text),
+                    DateOccupied = editor.dtpDateOccupied.Value,
+                    ProcessedBy = editor.txtEmployeeNumber.Text,
+                    ProcessedFor = editor.txtAccountNumber.Text,
+                    RoomOccupied = editor.txtRoomNumber.Text,
+                    RateApplied = double.Parse(editor.txtRateApplied.Text),
+                    PhoneUse = double.Parse(editor.txtPhoneUse.Text)
+                };
 
                 lstOccupancies.Add(occupy);
 

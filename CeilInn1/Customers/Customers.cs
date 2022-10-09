@@ -62,7 +62,7 @@ namespace CeilInn1
             string strFileName = PathCustomers;
 
             // First check if the file was previously created
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 // If the list of customers exists already,
                 // get it and store it in a file stream
@@ -77,14 +77,15 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Customer client = new Customer();
-
-                client.AccountNumber = editor.txtAccountNumber.Text;
-                client.FirstName = editor.txtFirstName.Text;
-                client.LastName = editor.txtLastName.Text;
-                client.PhoneNumber = editor.txtPhoneNumber.Text;
-                client.EmergencyName = editor.txtEmergencyName.Text;
-                client.EmergencyPhone = editor.txtEmergencyPhone.Text;
+                Customer client = new Customer
+                {
+                    AccountNumber = editor.txtAccountNumber.Text,
+                    FirstName = editor.txtFirstName.Text,
+                    LastName = editor.txtLastName.Text,
+                    PhoneNumber = editor.txtPhoneNumber.Text,
+                    EmergencyName = editor.txtEmergencyName.Text,
+                    EmergencyPhone = editor.txtEmergencyPhone.Text
+                };
 
                 // Add the property in the collection
                 lstCustomers.Add(client);

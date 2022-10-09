@@ -66,13 +66,14 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Room rm = new Room();
-
-                rm.RoomNumber = editor.txtRoomNumber.Text;
-                rm.RoomType = editor.cbxRoomTypes.Text;
-                rm.BedType = editor.cbxBedTypes.Text;
-                rm.Rate = double.Parse(editor.txtRate.Text);
-                rm.OccupancyStatus = editor.cbxOccupanciesStatus.Text;
+                Room rm = new Room
+                {
+                    RoomNumber = editor.txtRoomNumber.Text,
+                    RoomType = editor.cbxRoomTypes.Text,
+                    BedType = editor.cbxBedTypes.Text,
+                    Rate = double.Parse(editor.txtRate.Text),
+                    OccupancyStatus = editor.cbxOccupanciesStatus.Text
+                };
                 lstRooms.Add(rm);
 
                 using (FileStream fsCustomers = new FileStream(strFileName,
