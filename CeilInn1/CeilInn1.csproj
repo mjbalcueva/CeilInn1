@@ -53,6 +53,8 @@
     <Compile Include="CustomerEditor.Designer.cs">
       <DependentUpon>CustomerEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeEditor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
