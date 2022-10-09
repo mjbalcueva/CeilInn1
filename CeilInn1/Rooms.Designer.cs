@@ -53,6 +53,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnNewRoom
             // 
@@ -62,6 +63,7 @@
             this.btnNewRoom.TabIndex = 7;
             this.btnNewRoom.Text = "New Room...";
             this.btnNewRoom.UseVisualStyleBackColor = true;
+            this.btnNewRoom.Click += new System.EventHandler(this.btnNewRoom_Click);
             // 
             // lvwRooms
             // 
@@ -153,6 +155,7 @@
             this.Name = "Rooms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Rooms";
+            this.Load += new System.EventHandler(this.Rooms_Load);
             this.cmsRooms.ResumeLayout(false);
             this.ResumeLayout(false);
 
