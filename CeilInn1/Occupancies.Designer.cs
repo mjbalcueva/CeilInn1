@@ -48,6 +48,7 @@
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnNewOccupancy
             // 
@@ -57,6 +58,7 @@
             this.btnNewOccupancy.TabIndex = 4;
             this.btnNewOccupancy.Text = "New Occupancy...";
             this.btnNewOccupancy.UseVisualStyleBackColor = true;
+            this.btnNewOccupancy.Click += new System.EventHandler(this.btnNewOccupancy_Click);
             // 
             // lvwOccupancies
             // 
@@ -126,6 +128,7 @@
             this.Name = "Occupancies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Occupancies";
+            this.Load += new System.EventHandler(this.Occupancies_Load);
             this.ResumeLayout(false);
 
         }
