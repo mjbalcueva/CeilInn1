@@ -113,6 +113,9 @@
     <EmbeddedResource Include="OccupancyEditor.resx">
       <DependentUpon>OccupancyEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PaymentEditor.resx">
+      <DependentUpon>PaymentEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
