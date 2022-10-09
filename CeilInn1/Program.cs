@@ -19,7 +19,8 @@ namespace CeilInn1
             //Application.Run(new OccupancyEditor());
             //Application.Run(new PaymentEditor());
             //Application.Run(new Customers());
-            Application.Run(new Employees());
+            //Application.Run(new Employees());
+            Application.Run(new Rooms());
         }
     }
 }
