@@ -52,80 +52,80 @@
     <Compile Include="CeilInn.Designer.cs">
       <DependentUpon>CeilInn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer.cs" />
-    <Compile Include="CustomerEditor.cs">
+    <Compile Include="Customers\Customer.cs" />
+    <Compile Include="Customers\CustomerEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerEditor.Designer.cs">
+    <Compile Include="Customers\CustomerEditor.Designer.cs">
       <DependentUpon>CustomerEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customers.cs">
+    <Compile Include="Customers\Customers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customers.Designer.cs">
+    <Compile Include="Customers\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeEditor.cs">
+    <Compile Include="Employee\Employee.cs" />
+    <Compile Include="Employee\EmployeeEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeEditor.Designer.cs">
+    <Compile Include="Employee\EmployeeEditor.Designer.cs">
       <DependentUpon>EmployeeEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
+    <Compile Include="Employee\Employees.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees.Designer.cs">
+    <Compile Include="Employee\Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Occupancies.cs">
+    <Compile Include="Occupancy\Occupancies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Occupancies.Designer.cs">
+    <Compile Include="Occupancy\Occupancies.Designer.cs">
       <DependentUpon>Occupancies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Occupancy.cs" />
-    <Compile Include="OccupancyEditor.cs">
+    <Compile Include="Occupancy\Occupancy.cs" />
+    <Compile Include="Occupancy\OccupancyEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OccupancyEditor.Designer.cs">
+    <Compile Include="Occupancy\OccupancyEditor.Designer.cs">
       <DependentUpon>OccupancyEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payment.cs" />
-    <Compile Include="PaymentEditor.cs">
+    <Compile Include="Payment\Payment.cs" />
+    <Compile Include="Payment\PaymentEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentEditor.Designer.cs">
+    <Compile Include="Payment\PaymentEditor.Designer.cs">
       <DependentUpon>PaymentEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payments.cs">
+    <Compile Include="Payment\Payments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Payments.Designer.cs">
+    <Compile Include="Payment\Payments.Designer.cs">
       <DependentUpon>Payments.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Room.cs" />
-    <Compile Include="RoomEditor.cs">
+    <Compile Include="Room\Room.cs" />
+    <Compile Include="Room\RoomEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomEditor.Designer.cs">
+    <Compile Include="Room\RoomEditor.Designer.cs">
       <DependentUpon>RoomEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rooms.cs">
+    <Compile Include="Room\Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rooms.Designer.cs">
+    <Compile Include="Room\Rooms.Designer.cs">
       <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Customers.resx">
+    <EmbeddedResource Include="Customers\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OccupancyEditor.resx">
+    <EmbeddedResource Include="Occupancy\OccupancyEditor.resx">
       <DependentUpon>OccupancyEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentEditor.resx">
+    <EmbeddedResource Include="Payment\PaymentEditor.resx">
       <DependentUpon>PaymentEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,5 +150,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
