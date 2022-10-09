@@ -10,10 +10,7 @@ namespace CeilInn1
     {
         private const string PathCustomers = @"assets\Customers.cst";
 
-        public Customers()
-        {
-            InitializeComponent();
-        }
+        public Customers() => InitializeComponent();
 
         private void ShowCustomers()
         {
@@ -22,7 +19,7 @@ namespace CeilInn1
             string strFileName = PathCustomers;
 
             // Make sure the file exists
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 // if so, create a file stream
                 using (FileStream fsCustomers = new FileStream(strFileName,
@@ -53,10 +50,7 @@ namespace CeilInn1
             }
         }
 
-        private void Customers_Load(object sender, EventArgs e)
-        {
-            ShowCustomers();
-        }
+        private void Customers_Load(object sender, EventArgs e) => ShowCustomers();
 
         private void btnNewCustomer_Click(object sender, EventArgs e)
         {
@@ -109,9 +103,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }

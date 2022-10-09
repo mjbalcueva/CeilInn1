@@ -8,15 +8,9 @@ namespace CeilInn1
     {
         private const string Path = @"assets\";
 
-        public CeilInn()
-        {
-            InitializeComponent();
-        }
+        public CeilInn() => InitializeComponent();
 
-        private void CeilInn_Load(object sender, EventArgs e)
-        {
-            Directory.CreateDirectory(Path);
-        }
+        private void CeilInn_Load(object sender, EventArgs e) => Directory.CreateDirectory(Path);
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
@@ -48,9 +42,6 @@ namespace CeilInn1
             staff.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }

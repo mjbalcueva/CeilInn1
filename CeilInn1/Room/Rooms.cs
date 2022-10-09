@@ -10,10 +10,7 @@ namespace CeilInn1
     {
         private const string PathRooms = @"assets\Rooms.rms";
 
-        public Rooms()
-        {
-            InitializeComponent();
-        }
+        public Rooms() => InitializeComponent();
 
         private void ShowRooms()
         {
@@ -46,10 +43,7 @@ namespace CeilInn1
             }
         }
 
-        private void Rooms_Load(object sender, EventArgs e)
-        {
-            ShowRooms();
-        }
+        private void Rooms_Load(object sender, EventArgs e) => ShowRooms();
 
         private void btnNewRoom_Click(object sender, EventArgs e)
         {
@@ -94,9 +88,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }

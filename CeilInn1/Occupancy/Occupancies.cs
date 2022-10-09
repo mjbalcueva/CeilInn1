@@ -13,10 +13,7 @@ namespace CeilInn1
         private const string PathEmployees = @"assets\Employees.mpl";
         private const string PathOccupancies = @"assets\Occupancies.ocp";
 
-        public Occupancies()
-        {
-            InitializeComponent();
-        }
+        public Occupancies() => InitializeComponent();
 
         private void ShowOccupancies()
         {
@@ -109,10 +106,7 @@ namespace CeilInn1
             }
         }
 
-        private void Occupancies_Load(object sender, EventArgs e)
-        {
-            ShowOccupancies();
-        }
+        private void Occupancies_Load(object sender, EventArgs e) => ShowOccupancies();
 
         private void btnNewOccupancy_Click(object sender, EventArgs e)
         {
@@ -157,9 +151,6 @@ namespace CeilInn1
             ShowOccupancies();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }

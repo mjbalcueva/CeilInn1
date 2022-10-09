@@ -10,10 +10,7 @@ namespace CeilInn1
     {
         private const string PathEmployees = @"assets\Employees.mpl";
 
-        public Employees()
-        {
-            InitializeComponent();
-        }
+        public Employees() => InitializeComponent();
 
         private void ShowEmployees()
         {
@@ -45,10 +42,7 @@ namespace CeilInn1
             }
         }
 
-        private void Employees_Load(object sender, EventArgs e)
-        {
-            ShowEmployees();
-        }
+        private void Employees_Load(object sender, EventArgs e) => ShowEmployees();
 
         private void btnNewEmployee_Click(object sender, EventArgs e)
         {
@@ -90,9 +84,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }

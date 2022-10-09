@@ -12,10 +12,7 @@ namespace CeilInn1
         private const string PathEmployees = @"assets\Employees.mpl";
         private const string PathCustomers = @"assets\Customers.cst";
 
-        public OccupancyEditor()
-        {
-            InitializeComponent();
-        }
+        public OccupancyEditor() => InitializeComponent();
 
         private void OccupancyEditor_Load(object sender, EventArgs e)
         {

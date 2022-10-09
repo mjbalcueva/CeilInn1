@@ -12,10 +12,7 @@ namespace CeilInn1
         private const string PathCustomers = @"assets\Customers.cst";
         private const string PathEmployees = @"assets\Employees.mpl";
 
-        public Payments()
-        {
-            InitializeComponent();
-        }
+        public Payments() => InitializeComponent();
 
         private void ShowPayments()
         {
@@ -95,10 +92,7 @@ namespace CeilInn1
             }
         }
 
-        private void Payments_Load(object sender, EventArgs e)
-        {
-            ShowPayments();
-        }
+        private void Payments_Load(object sender, EventArgs e) => ShowPayments();
 
         private void btnNewPayment_Click(object sender, EventArgs e)
         {
@@ -148,9 +142,6 @@ namespace CeilInn1
             ShowPayments();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }
