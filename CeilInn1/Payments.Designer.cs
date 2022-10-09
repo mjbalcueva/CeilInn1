@@ -55,6 +55,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnNewPayment
             // 
@@ -65,6 +66,7 @@
             this.btnNewPayment.TabIndex = 7;
             this.btnNewPayment.Text = "New Payment...";
             this.btnNewPayment.UseVisualStyleBackColor = true;
+            this.btnNewPayment.Click += new System.EventHandler(this.btnNewPayment_Click);
             // 
             // lvwPayments
             // 
@@ -175,6 +177,7 @@
             this.Name = "Payments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Payments";
+            this.Load += new System.EventHandler(this.Payments_Load);
             this.ResumeLayout(false);
 
         }
