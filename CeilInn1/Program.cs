@@ -14,7 +14,8 @@ namespace CeilInn1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CustomerEditor());
-            Application.Run(new EmployeeEditor());
+            //Application.Run(new EmployeeEditor());
+            Application.Run(new RoomEditor());
         }
     }
 }
