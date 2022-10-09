@@ -8,6 +8,10 @@ namespace CeilInn1
 {
     public partial class PaymentEditor : Form
     {
+        private const string PathPayments = @"assets\Payments.pmt";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathCustomers = @"assets\Customers.cst";
+
         public PaymentEditor()
         {
             InitializeComponent();
@@ -29,7 +33,7 @@ namespace CeilInn1
             int iReceiptNumber = 1000;
             BinaryFormatter bfPayments = new BinaryFormatter();
             Collection<Payment> lstPaymentes = new Collection<Payment>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
+            string strFileName = PathPayments;
 
             if (File.Exists(strFileName) == true)
             {
@@ -53,7 +57,7 @@ namespace CeilInn1
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
             if (File.Exists(strFileName) == true)
             {
@@ -76,7 +80,7 @@ namespace CeilInn1
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             if (File.Exists(strFileName) == true)
             {
