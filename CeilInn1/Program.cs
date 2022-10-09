@@ -15,7 +15,8 @@ namespace CeilInn1
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CustomerEditor());
             //Application.Run(new EmployeeEditor());
-            Application.Run(new RoomEditor());
+            //Application.Run(new RoomEditor());
+            Application.Run(new OccupancyEditor());
         }
     }
 }
