@@ -13,6 +13,7 @@ namespace CeilInn1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new CustomerEditor());
         }
     }
 }
