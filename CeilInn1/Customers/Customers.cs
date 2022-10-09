@@ -8,6 +8,8 @@ namespace CeilInn1
 {
     public partial class Customers : Form
     {
+        private const string PathCustomers = @"assets\Customers.cst";
+
         public Customers()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace CeilInn1
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             // Make sure the file exists
             if (File.Exists(strFileName) == true)
@@ -63,7 +65,7 @@ namespace CeilInn1
             Collection<Customer> lstCustomers = new Collection<Customer>();
 
             // Get a reference to the file that holds the customers records
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             // First check if the file was previously created
             if (File.Exists(strFileName) == true)

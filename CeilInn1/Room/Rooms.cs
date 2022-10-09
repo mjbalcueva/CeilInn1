@@ -8,6 +8,8 @@ namespace CeilInn1
 {
     public partial class Rooms : Form
     {
+        private const string PathRooms = @"assets\Rooms.rms";
+
         public Rooms()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace CeilInn1
         {
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
             if (File.Exists(strFileName) == true)
             {
@@ -55,7 +57,7 @@ namespace CeilInn1
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
             if (File.Exists(strFileName) == true)
             {

@@ -8,6 +8,11 @@ namespace CeilInn1
 {
     public partial class Occupancies : Form
     {
+        private const string PathRooms = @"assets\Rooms.rms";
+        private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathOccupancies = @"assets\Occupancies.ocp";
+
         public Occupancies()
         {
             InitializeComponent();
@@ -24,10 +29,10 @@ namespace CeilInn1
             string strEmployee = "", strCustomer = "", strRoom = "";
             Collection<Customer> lstCustomers = new Collection<Customer>();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
-            string strRoomsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
-            string strCustomersFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
-            string strEmployeesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
-            string strOccupanciesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strRoomsFile = PathRooms;
+            string strCustomersFile = PathCustomers;
+            string strEmployeesFile = PathEmployees;
+            string strOccupanciesFile = PathOccupancies;
 
             if (File.Exists(strOccupanciesFile) == true)
             {
@@ -115,7 +120,7 @@ namespace CeilInn1
             BinaryFormatter bfmOccupancies = new BinaryFormatter();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strFileName = PathOccupancies;
 
             if (File.Exists(strFileName) == true)
             {

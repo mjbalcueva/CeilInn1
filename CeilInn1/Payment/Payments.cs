@@ -8,6 +8,10 @@ namespace CeilInn1
 {
     public partial class Payments : Form
     {
+        private const string PathPayments = @"assets\Payments.pmt";
+        private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathEmployees = @"assets\Employees.mpl";
+
         public Payments()
         {
             InitializeComponent();
@@ -23,9 +27,9 @@ namespace CeilInn1
             string strEmployee = "", strCustomer = "";
             Collection<Payment> payments = new Collection<Payment>();
             Collection<Customer> customers = new Collection<Customer>();
-            string strPaymentsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
-            string strCustomersFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
-            string strEmployeesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strPaymentsFile = PathPayments;
+            string strCustomersFile = PathCustomers;
+            string strEmployeesFile = PathEmployees;
 
             if (File.Exists(strPaymentsFile) == true)
             {
@@ -101,7 +105,7 @@ namespace CeilInn1
             PaymentEditor editor = new PaymentEditor();
             BinaryFormatter bfPayments = new BinaryFormatter();
             Collection<Payment> payments = new Collection<Payment>();
-            string strPaymentsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
+            string strPaymentsFile = PathPayments;
 
             if (editor.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {

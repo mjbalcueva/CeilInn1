@@ -8,6 +8,8 @@ namespace CeilInn1
 {
     public partial class Employees : Form
     {
+        private const string PathEmployees = @"assets\Employees.mpl";
+
         public Employees()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace CeilInn1
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
             if (File.Exists(strFileName) == true)
             {
@@ -54,7 +56,7 @@ namespace CeilInn1
             EmployeeEditor editor = new EmployeeEditor();
             BinaryFormatter bfEmployees = new BinaryFormatter();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
             if (File.Exists(strFileName) == true)
             {

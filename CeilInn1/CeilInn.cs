@@ -6,6 +6,8 @@ namespace CeilInn1
 {
     public partial class CeilInn : Form
     {
+        private const string Path = @"assets\";
+
         public CeilInn()
         {
             InitializeComponent();
@@ -13,7 +15,7 @@ namespace CeilInn1
 
         private void CeilInn_Load(object sender, EventArgs e)
         {
-            Directory.CreateDirectory(@"C:\Microsoft Visual C# Application Design\Ceil Inn");
+            Directory.CreateDirectory(Path);
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)
