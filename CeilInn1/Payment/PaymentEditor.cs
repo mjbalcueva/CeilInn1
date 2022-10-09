@@ -8,12 +8,13 @@ namespace CeilInn1
 {
     public partial class PaymentEditor : Form
     {
-        public PaymentEditor()
-        {
-            InitializeComponent();
-        }
+        private const string PathPayments = @"assets\Payments.pmt";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathCustomers = @"assets\Customers.cst";
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        public PaymentEditor() => InitializeComponent();
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
             // If there is no payment amount, don't do anything
             if (string.IsNullOrEmpty(txtAmountCharged.Text))
@@ -29,9 +30,9 @@ namespace CeilInn1
             int iReceiptNumber = 1000;
             BinaryFormatter bfPayments = new BinaryFormatter();
             Collection<Payment> lstPaymentes = new Collection<Payment>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Payments.pmt";
+            string strFileName = PathPayments;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsPayments = new FileStream(strFileName,
                                                          FileMode.Open,
@@ -49,13 +50,13 @@ namespace CeilInn1
             txtReceiptNumber.Text = (iReceiptNumber + 1).ToString();
         }
 
-        private void txtEmployeeNumber_Leave(object sender, EventArgs e)
+        private void TxtEmployeeNumber_Leave(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -72,13 +73,13 @@ namespace CeilInn1
             }
         }
 
-        private void txtAccountNumber_Leave(object sender, EventArgs e)
+        private void TxtAccountNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsCustomers = new FileStream(strFileName,
                                                                FileMode.Open,

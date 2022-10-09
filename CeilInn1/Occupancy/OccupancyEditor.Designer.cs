@@ -244,7 +244,7 @@
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
             this.txtEmployeeNumber.Size = new System.Drawing.Size(83, 22);
             this.txtEmployeeNumber.TabIndex = 4;
-            this.txtEmployeeNumber.Leave += new System.EventHandler(this.txtEmployeeNumber_Leave);
+            this.txtEmployeeNumber.Leave += new System.EventHandler(this.TxtEmployeeNumber_Leave);
             // 
             // txtAccountNumber
             // 
@@ -253,7 +253,7 @@
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.Size = new System.Drawing.Size(83, 22);
             this.txtAccountNumber.TabIndex = 7;
-            this.txtAccountNumber.Leave += new System.EventHandler(this.txtAccountNumber_Leave);
+            this.txtAccountNumber.Leave += new System.EventHandler(this.TxtAccountNumber_Leave);
             // 
             // txtOccupancyNumber
             // 
@@ -270,7 +270,7 @@
             this.txtRoomNumber.Name = "txtRoomNumber";
             this.txtRoomNumber.Size = new System.Drawing.Size(83, 22);
             this.txtRoomNumber.TabIndex = 10;
-            this.txtRoomNumber.Leave += new System.EventHandler(this.txtRoomNumber_Leave);
+            this.txtRoomNumber.Leave += new System.EventHandler(this.TxtRoomNumber_Leave);
             // 
             // OccupancyEditor
             // 

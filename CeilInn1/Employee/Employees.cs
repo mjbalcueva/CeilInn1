@@ -8,18 +8,17 @@ namespace CeilInn1
 {
     public partial class Employees : Form
     {
-        public Employees()
-        {
-            InitializeComponent();
-        }
+        private const string PathEmployees = @"assets\Employees.mpl";
+
+        public Employees() => InitializeComponent();
 
         private void ShowEmployees()
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -43,20 +42,17 @@ namespace CeilInn1
             }
         }
 
-        private void Employees_Load(object sender, EventArgs e)
-        {
-            ShowEmployees();
-        }
+        private void Employees_Load(object sender, EventArgs e) => ShowEmployees();
 
-        private void btnNewEmployee_Click(object sender, EventArgs e)
+        private void BtnNewEmployee_Click(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees = new Collection<Employee>();
             EmployeeEditor editor = new EmployeeEditor();
             BinaryFormatter bfEmployees = new BinaryFormatter();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                             FileMode.Open,
@@ -68,12 +64,13 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Employee clerk = new Employee();
-
-                clerk.EmployeeNumber = editor.txtEmployeeNumber.Text;
-                clerk.FirstName = editor.txtFirstName.Text;
-                clerk.LastName = editor.txtLastName.Text;
-                clerk.Title = editor.txtTitle.Text;
+                Employee clerk = new Employee
+                {
+                    EmployeeNumber = editor.txtEmployeeNumber.Text,
+                    FirstName = editor.txtFirstName.Text,
+                    LastName = editor.txtLastName.Text,
+                    Title = editor.txtTitle.Text
+                };
 
                 lstEmployees.Add(clerk);
 
@@ -88,9 +85,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

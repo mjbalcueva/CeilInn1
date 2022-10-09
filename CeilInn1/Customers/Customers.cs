@@ -8,19 +8,18 @@ namespace CeilInn1
 {
     public partial class Customers : Form
     {
-        public Customers()
-        {
-            InitializeComponent();
-        }
+        private const string PathCustomers = @"assets\Customers.cst";
+
+        public Customers() => InitializeComponent();
 
         private void ShowCustomers()
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             // Make sure the file exists
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 // if so, create a file stream
                 using (FileStream fsCustomers = new FileStream(strFileName,
@@ -51,22 +50,19 @@ namespace CeilInn1
             }
         }
 
-        private void Customers_Load(object sender, EventArgs e)
-        {
-            ShowCustomers();
-        }
+        private void Customers_Load(object sender, EventArgs e) => ShowCustomers();
 
-        private void btnNewCustomer_Click(object sender, EventArgs e)
+        private void BtnNewCustomer_Click(object sender, EventArgs e)
         {
             CustomerEditor editor = new CustomerEditor();
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
 
             // Get a reference to the file that holds the customers records
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             // First check if the file was previously created
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 // If the list of customers exists already,
                 // get it and store it in a file stream
@@ -81,14 +77,15 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Customer client = new Customer();
-
-                client.AccountNumber = editor.txtAccountNumber.Text;
-                client.FirstName = editor.txtFirstName.Text;
-                client.LastName = editor.txtLastName.Text;
-                client.PhoneNumber = editor.txtPhoneNumber.Text;
-                client.EmergencyName = editor.txtEmergencyName.Text;
-                client.EmergencyPhone = editor.txtEmergencyPhone.Text;
+                Customer client = new Customer
+                {
+                    AccountNumber = editor.txtAccountNumber.Text,
+                    FirstName = editor.txtFirstName.Text,
+                    LastName = editor.txtLastName.Text,
+                    PhoneNumber = editor.txtPhoneNumber.Text,
+                    EmergencyName = editor.txtEmergencyName.Text,
+                    EmergencyPhone = editor.txtEmergencyPhone.Text
+                };
 
                 // Add the property in the collection
                 lstCustomers.Add(client);
@@ -107,9 +104,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

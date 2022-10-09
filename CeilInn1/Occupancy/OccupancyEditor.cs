@@ -8,19 +8,21 @@ namespace CeilInn1
 {
     public partial class OccupancyEditor : Form
     {
-        public OccupancyEditor()
-        {
-            InitializeComponent();
-        }
+        private const string PathOccupancies = @"assets\Occupancies.ocp";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathRooms = @"assets\Rooms.rms";
+
+        public OccupancyEditor() => InitializeComponent();
 
         private void OccupancyEditor_Load(object sender, EventArgs e)
         {
             int iOccupancyNumber = 100000;
             BinaryFormatter bfOccupancies = new BinaryFormatter();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
-            string strOccupanciesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strOccupanciesFile = PathOccupancies;
 
-            if (File.Exists(strOccupanciesFile) == true)
+            if (File.Exists(strOccupanciesFile))
             {
                 using (FileStream fsOccupancies = new FileStream(strOccupanciesFile,
                                                          FileMode.Open,
@@ -38,13 +40,13 @@ namespace CeilInn1
             txtOccupancyNumber.Text = (iOccupancyNumber + 1).ToString();
         }
 
-        private void txtEmployeeNumber_Leave(object sender, EventArgs e)
+        private void TxtEmployeeNumber_Leave(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -61,13 +63,13 @@ namespace CeilInn1
             }
         }
 
-        private void txtAccountNumber_Leave(object sender, EventArgs e)
+        private void TxtAccountNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsCustomers = new FileStream(strFileName,
                                                                 FileMode.Open,
@@ -84,13 +86,13 @@ namespace CeilInn1
             }
         }
 
-        private void txtRoomNumber_Leave(object sender, EventArgs e)
+        private void TxtRoomNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                                FileMode.Open,

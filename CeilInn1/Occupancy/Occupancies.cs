@@ -8,10 +8,12 @@ namespace CeilInn1
 {
     public partial class Occupancies : Form
     {
-        public Occupancies()
-        {
-            InitializeComponent();
-        }
+        private const string PathRooms = @"assets\Rooms.rms";
+        private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathOccupancies = @"assets\Occupancies.ocp";
+
+        public Occupancies() => InitializeComponent();
 
         private void ShowOccupancies()
         {
@@ -24,12 +26,12 @@ namespace CeilInn1
             string strEmployee = "", strCustomer = "", strRoom = "";
             Collection<Customer> lstCustomers = new Collection<Customer>();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
-            string strRoomsFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
-            string strCustomersFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
-            string strEmployeesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
-            string strOccupanciesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strRoomsFile = PathRooms;
+            string strCustomersFile = PathCustomers;
+            string strEmployeesFile = PathEmployees;
+            string strOccupanciesFile = PathOccupancies;
 
-            if (File.Exists(strOccupanciesFile) == true)
+            if (File.Exists(strOccupanciesFile))
             {
                 using (FileStream fsOccupancies = new FileStream(strOccupanciesFile,
                                                          FileMode.Open,
@@ -78,7 +80,7 @@ namespace CeilInn1
 
                         lviOccupancy.SubItems.Add(strCustomer);
 
-                        if (File.Exists(strRoomsFile) == true)
+                        if (File.Exists(strRoomsFile))
                         {
                             using (FileStream fsRooms = new FileStream(strRoomsFile,
                                                                            FileMode.Open,
@@ -104,20 +106,17 @@ namespace CeilInn1
             }
         }
 
-        private void Occupancies_Load(object sender, EventArgs e)
-        {
-            ShowOccupancies();
-        }
+        private void Occupancies_Load(object sender, EventArgs e) => ShowOccupancies();
 
-        private void btnNewOccupancy_Click(object sender, EventArgs e)
+        private void BtnNewOccupancy_Click(object sender, EventArgs e)
         {
             OccupancyEditor editor = new OccupancyEditor();
             BinaryFormatter bfmOccupancies = new BinaryFormatter();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
 
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strFileName = PathOccupancies;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsOccupancies = new FileStream(strFileName,
                                                             FileMode.Open,
@@ -129,15 +128,16 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
-                Occupancy occupy = new Occupancy();
-
-                occupy.OccupancyNumber = int.Parse(editor.txtOccupancyNumber.Text);
-                occupy.DateOccupied = editor.dtpDateOccupied.Value;
-                occupy.ProcessedBy = editor.txtEmployeeNumber.Text;
-                occupy.ProcessedFor = editor.txtAccountNumber.Text;
-                occupy.RoomOccupied = editor.txtRoomNumber.Text;
-                occupy.RateApplied = double.Parse(editor.txtRateApplied.Text);
-                occupy.PhoneUse = double.Parse(editor.txtPhoneUse.Text);
+                Occupancy occupy = new Occupancy
+                {
+                    OccupancyNumber = int.Parse(editor.txtOccupancyNumber.Text),
+                    DateOccupied = editor.dtpDateOccupied.Value,
+                    ProcessedBy = editor.txtEmployeeNumber.Text,
+                    ProcessedFor = editor.txtAccountNumber.Text,
+                    RoomOccupied = editor.txtRoomNumber.Text,
+                    RateApplied = double.Parse(editor.txtRateApplied.Text),
+                    PhoneUse = double.Parse(editor.txtPhoneUse.Text)
+                };
 
                 lstOccupancies.Add(occupy);
 
@@ -152,9 +152,6 @@ namespace CeilInn1
             ShowOccupancies();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

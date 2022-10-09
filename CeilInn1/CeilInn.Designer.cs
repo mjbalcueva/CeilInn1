@@ -45,7 +45,7 @@
             this.btnClose.TabIndex = 9;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // btnOccupancies
             // 
@@ -56,7 +56,7 @@
             this.btnOccupancies.TabIndex = 8;
             this.btnOccupancies.Text = "Occupancies...";
             this.btnOccupancies.UseVisualStyleBackColor = true;
-            this.btnOccupancies.Click += new System.EventHandler(this.btnOccupancies_Click);
+            this.btnOccupancies.Click += new System.EventHandler(this.BtnOccupancies_Click);
             // 
             // btnRooms
             // 
@@ -67,7 +67,7 @@
             this.btnRooms.TabIndex = 7;
             this.btnRooms.Text = "Rooms...";
             this.btnRooms.UseVisualStyleBackColor = true;
-            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
+            this.btnRooms.Click += new System.EventHandler(this.BtnRooms_Click);
             // 
             // btnEmployees
             // 
@@ -78,7 +78,7 @@
             this.btnEmployees.TabIndex = 6;
             this.btnEmployees.Text = "Employees...";
             this.btnEmployees.UseVisualStyleBackColor = true;
-            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
+            this.btnEmployees.Click += new System.EventHandler(this.BtnEmployees_Click);
             // 
             // btnCustomers
             // 
@@ -89,7 +89,7 @@
             this.btnCustomers.TabIndex = 5;
             this.btnCustomers.Text = "Customers...";
             this.btnCustomers.UseVisualStyleBackColor = true;
-            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            this.btnCustomers.Click += new System.EventHandler(this.BtnCustomers_Click);
             // 
             // btnPayments
             // 
@@ -100,7 +100,7 @@
             this.btnPayments.TabIndex = 10;
             this.btnPayments.Text = "Payments...";
             this.btnPayments.UseVisualStyleBackColor = true;
-            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
+            this.btnPayments.Click += new System.EventHandler(this.BtnPayments_Click);
             // 
             // CeilInn
             // 
