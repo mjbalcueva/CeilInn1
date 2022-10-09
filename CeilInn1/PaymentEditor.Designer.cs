@@ -80,6 +80,7 @@
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.Size = new System.Drawing.Size(63, 20);
             this.txtAccountNumber.TabIndex = 31;
+            this.txtAccountNumber.Leave += new System.EventHandler(this.txtAccountNumber_Leave);
             // 
             // txtEmployeeNumber
             // 
@@ -87,6 +88,7 @@
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
             this.txtEmployeeNumber.Size = new System.Drawing.Size(63, 20);
             this.txtEmployeeNumber.TabIndex = 28;
+            this.txtEmployeeNumber.Leave += new System.EventHandler(this.txtEmployeeNumber_Leave);
             // 
             // label11
             // 
@@ -295,6 +297,7 @@
             this.btnCalculate.TabIndex = 58;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtTotalAmountPaid
             // 
@@ -436,6 +439,7 @@
             this.Name = "PaymentEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Payment Editor";
+            this.Load += new System.EventHandler(this.PaymentEditor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
