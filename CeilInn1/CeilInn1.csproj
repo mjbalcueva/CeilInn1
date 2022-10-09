@@ -60,6 +60,7 @@
     <Compile Include="EmployeeEditor.Designer.cs">
       <DependentUpon>EmployeeEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Occupancy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
