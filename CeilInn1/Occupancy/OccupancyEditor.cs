@@ -8,6 +8,10 @@ namespace CeilInn1
 {
     public partial class OccupancyEditor : Form
     {
+        private const string PathOccupancies = @"assets\Occupancies.ocp";
+        private const string PathEmployees = @"assets\Employees.mpl";
+        private const string PathCustomers = @"assets\Customers.cst";
+
         public OccupancyEditor()
         {
             InitializeComponent();
@@ -18,7 +22,7 @@ namespace CeilInn1
             int iOccupancyNumber = 100000;
             BinaryFormatter bfOccupancies = new BinaryFormatter();
             Collection<Occupancy> lstOccupancies = new Collection<Occupancy>();
-            string strOccupanciesFile = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Occupancies.ocp";
+            string strOccupanciesFile = PathOccupancies;
 
             if (File.Exists(strOccupanciesFile) == true)
             {
@@ -42,7 +46,7 @@ namespace CeilInn1
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Employees.mpl";
+            string strFileName = PathEmployees;
 
             if (File.Exists(strFileName) == true)
             {
@@ -65,7 +69,7 @@ namespace CeilInn1
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Customers.cst";
+            string strFileName = PathCustomers;
 
             if (File.Exists(strFileName) == true)
             {
