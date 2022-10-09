@@ -31,7 +31,7 @@ namespace CeilInn1
             string strEmployeesFile = PathEmployees;
             string strOccupanciesFile = PathOccupancies;
 
-            if (File.Exists(strOccupanciesFile) == true)
+            if (File.Exists(strOccupanciesFile))
             {
                 using (FileStream fsOccupancies = new FileStream(strOccupanciesFile,
                                                          FileMode.Open,
@@ -80,7 +80,7 @@ namespace CeilInn1
 
                         lviOccupancy.SubItems.Add(strCustomer);
 
-                        if (File.Exists(strRoomsFile) == true)
+                        if (File.Exists(strRoomsFile))
                         {
                             using (FileStream fsRooms = new FileStream(strRoomsFile,
                                                                            FileMode.Open,
@@ -108,7 +108,7 @@ namespace CeilInn1
 
         private void Occupancies_Load(object sender, EventArgs e) => ShowOccupancies();
 
-        private void btnNewOccupancy_Click(object sender, EventArgs e)
+        private void BtnNewOccupancy_Click(object sender, EventArgs e)
         {
             OccupancyEditor editor = new OccupancyEditor();
             BinaryFormatter bfmOccupancies = new BinaryFormatter();
@@ -116,7 +116,7 @@ namespace CeilInn1
 
             string strFileName = PathOccupancies;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsOccupancies = new FileStream(strFileName,
                                                             FileMode.Open,
@@ -151,6 +151,6 @@ namespace CeilInn1
             ShowOccupancies();
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

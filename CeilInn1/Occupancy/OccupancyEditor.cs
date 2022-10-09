@@ -11,6 +11,7 @@ namespace CeilInn1
         private const string PathOccupancies = @"assets\Occupancies.ocp";
         private const string PathEmployees = @"assets\Employees.mpl";
         private const string PathCustomers = @"assets\Customers.cst";
+        private const string PathRooms = @"assets\Rooms.rms";
 
         public OccupancyEditor() => InitializeComponent();
 
@@ -39,7 +40,7 @@ namespace CeilInn1
             txtOccupancyNumber.Text = (iOccupancyNumber + 1).ToString();
         }
 
-        private void txtEmployeeNumber_Leave(object sender, EventArgs e)
+        private void TxtEmployeeNumber_Leave(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
@@ -62,7 +63,7 @@ namespace CeilInn1
             }
         }
 
-        private void txtAccountNumber_Leave(object sender, EventArgs e)
+        private void TxtAccountNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
@@ -85,11 +86,11 @@ namespace CeilInn1
             }
         }
 
-        private void txtRoomNumber_Leave(object sender, EventArgs e)
+        private void TxtRoomNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfRooms = new BinaryFormatter();
             Collection<Room> lstRooms = new Collection<Room>();
-            string strFileName = @"C:\Microsoft Visual C# Application Design\Ceil Inn\Rooms.rms";
+            string strFileName = PathRooms;
 
             if (File.Exists(strFileName))
             {

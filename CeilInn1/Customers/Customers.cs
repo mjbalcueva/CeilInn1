@@ -52,7 +52,7 @@ namespace CeilInn1
 
         private void Customers_Load(object sender, EventArgs e) => ShowCustomers();
 
-        private void btnNewCustomer_Click(object sender, EventArgs e)
+        private void BtnNewCustomer_Click(object sender, EventArgs e)
         {
             CustomerEditor editor = new CustomerEditor();
             BinaryFormatter bfCustomers = new BinaryFormatter();
@@ -103,6 +103,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

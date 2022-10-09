@@ -45,7 +45,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // btnNewEmployee
             // 
@@ -55,7 +55,7 @@
             this.btnNewEmployee.TabIndex = 7;
             this.btnNewEmployee.Text = "New Employee...";
             this.btnNewEmployee.UseVisualStyleBackColor = true;
-            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
+            this.btnNewEmployee.Click += new System.EventHandler(this.BtnNewEmployee_Click);
             // 
             // lvwEmployees
             // 

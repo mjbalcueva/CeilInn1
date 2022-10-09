@@ -18,7 +18,7 @@ namespace CeilInn1
             BinaryFormatter bfEmployees = new BinaryFormatter();
             string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -44,7 +44,7 @@ namespace CeilInn1
 
         private void Employees_Load(object sender, EventArgs e) => ShowEmployees();
 
-        private void btnNewEmployee_Click(object sender, EventArgs e)
+        private void BtnNewEmployee_Click(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees = new Collection<Employee>();
             EmployeeEditor editor = new EmployeeEditor();
@@ -52,7 +52,7 @@ namespace CeilInn1
 
             string strFileName = PathEmployees;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsEmployees = new FileStream(strFileName,
                                                             FileMode.Open,
@@ -84,6 +84,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

@@ -12,36 +12,36 @@ namespace CeilInn1
 
         private void CeilInn_Load(object sender, EventArgs e) => Directory.CreateDirectory(Path);
 
-        private void btnCustomers_Click(object sender, EventArgs e)
+        private void BtnCustomers_Click(object sender, EventArgs e)
         {
             Customers clients = new Customers();
             clients.Show();
         }
 
-        private void btnOccupancies_Click(object sender, EventArgs e)
+        private void BtnOccupancies_Click(object sender, EventArgs e)
         {
             Occupancies rentals = new Occupancies();
             rentals.Show();
         }
 
-        private void btnRooms_Click(object sender, EventArgs e)
+        private void BtnRooms_Click(object sender, EventArgs e)
         {
             Rooms rms = new Rooms();
             rms.Show();
         }
 
-        private void btnPayments_Click(object sender, EventArgs e)
+        private void BtnPayments_Click(object sender, EventArgs e)
         {
             Payments pmts = new Payments();
             pmts.Show();
         }
 
-        private void btnEmployees_Click(object sender, EventArgs e)
+        private void BtnEmployees_Click(object sender, EventArgs e)
         {
             Employees staff = new Employees();
             staff.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

@@ -18,7 +18,7 @@ namespace CeilInn1
             Collection<Room> lstRooms = new Collection<Room>();
             string strFileName = PathRooms;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                                FileMode.Open,
@@ -45,7 +45,7 @@ namespace CeilInn1
 
         private void Rooms_Load(object sender, EventArgs e) => ShowRooms();
 
-        private void btnNewRoom_Click(object sender, EventArgs e)
+        private void BtnNewRoom_Click(object sender, EventArgs e)
         {
             RoomEditor editor = new RoomEditor();
             BinaryFormatter bfRooms = new BinaryFormatter();
@@ -53,7 +53,7 @@ namespace CeilInn1
 
             string strFileName = PathRooms;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsRooms = new FileStream(strFileName,
                                                         FileMode.Open,
@@ -88,6 +88,6 @@ namespace CeilInn1
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

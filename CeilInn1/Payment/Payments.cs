@@ -28,7 +28,7 @@ namespace CeilInn1
             string strCustomersFile = PathCustomers;
             string strEmployeesFile = PathEmployees;
 
-            if (File.Exists(strPaymentsFile) == true)
+            if (File.Exists(strPaymentsFile))
             {
                 using (FileStream fsPayments = new FileStream(strPaymentsFile,
                                                               FileMode.Open,
@@ -94,7 +94,7 @@ namespace CeilInn1
 
         private void Payments_Load(object sender, EventArgs e) => ShowPayments();
 
-        private void btnNewPayment_Click(object sender, EventArgs e)
+        private void BtnNewPayment_Click(object sender, EventArgs e)
         {
             PaymentEditor editor = new PaymentEditor();
             BinaryFormatter bfPayments = new BinaryFormatter();
@@ -103,7 +103,7 @@ namespace CeilInn1
 
             if (editor.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                if (File.Exists(strPaymentsFile) == true)
+                if (File.Exists(strPaymentsFile))
                 {
                     using (FileStream fsPayments = new FileStream(strPaymentsFile,
                                                                     FileMode.Open,
@@ -142,6 +142,6 @@ namespace CeilInn1
             ShowPayments();
         }
 
-        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void BtnClose_Click(object sender, EventArgs e) => Close();
     }
 }

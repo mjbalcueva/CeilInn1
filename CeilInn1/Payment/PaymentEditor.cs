@@ -14,7 +14,7 @@ namespace CeilInn1
 
         public PaymentEditor() => InitializeComponent();
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
             // If there is no payment amount, don't do anything
             if (string.IsNullOrEmpty(txtAmountCharged.Text))
@@ -50,7 +50,7 @@ namespace CeilInn1
             txtReceiptNumber.Text = (iReceiptNumber + 1).ToString();
         }
 
-        private void txtEmployeeNumber_Leave(object sender, EventArgs e)
+        private void TxtEmployeeNumber_Leave(object sender, EventArgs e)
         {
             Collection<Employee> lstEmployees;
             BinaryFormatter bfEmployees = new BinaryFormatter();
@@ -73,13 +73,13 @@ namespace CeilInn1
             }
         }
 
-        private void txtAccountNumber_Leave(object sender, EventArgs e)
+        private void TxtAccountNumber_Leave(object sender, EventArgs e)
         {
             BinaryFormatter bfCustomers = new BinaryFormatter();
             Collection<Customer> lstCustomers = new Collection<Customer>();
             string strFileName = PathCustomers;
 
-            if (File.Exists(strFileName) == true)
+            if (File.Exists(strFileName))
             {
                 using (FileStream fsCustomers = new FileStream(strFileName,
                                                                FileMode.Open,
