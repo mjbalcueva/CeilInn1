@@ -128,11 +128,23 @@
     <EmbeddedResource Include="Customers\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeEditor.resx">
+      <DependentUpon>EmployeeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupancy\Occupancies.resx">
+      <DependentUpon>Occupancies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Occupancy\OccupancyEditor.resx">
       <DependentUpon>OccupancyEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\PaymentEditor.resx">
       <DependentUpon>PaymentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,6 +155,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Room\RoomEditor.resx">
+      <DependentUpon>RoomEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room\Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

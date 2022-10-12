@@ -53,7 +53,7 @@
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Location = new System.Drawing.Point(307, 257);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(113, 33);
             this.btnCancel.TabIndex = 13;
@@ -69,7 +69,7 @@
             this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Location = new System.Drawing.Point(172, 257);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(113, 33);
             this.btnOK.TabIndex = 12;
@@ -83,7 +83,7 @@
             this.txtEmergencyPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmergencyPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtEmergencyPhone.Location = new System.Drawing.Point(172, 212);
-            this.txtEmergencyPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmergencyPhone.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmergencyPhone.Name = "txtEmergencyPhone";
             this.txtEmergencyPhone.Size = new System.Drawing.Size(246, 27);
             this.txtEmergencyPhone.TabIndex = 11;
@@ -106,7 +106,7 @@
             this.txtEmergencyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmergencyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtEmergencyName.Location = new System.Drawing.Point(172, 174);
-            this.txtEmergencyName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmergencyName.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmergencyName.Name = "txtEmergencyName";
             this.txtEmergencyName.Size = new System.Drawing.Size(246, 27);
             this.txtEmergencyName.TabIndex = 9;
@@ -129,7 +129,7 @@
             this.txtPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtPhoneNumber.Location = new System.Drawing.Point(172, 136);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(5);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(138, 27);
             this.txtPhoneNumber.TabIndex = 7;
@@ -163,7 +163,7 @@
             this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtLastName.Location = new System.Drawing.Point(172, 98);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(5);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(138, 27);
             this.txtLastName.TabIndex = 5;
@@ -186,7 +186,7 @@
             this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtFirstName.Location = new System.Drawing.Point(172, 60);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(5);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(138, 27);
             this.txtFirstName.TabIndex = 3;
@@ -209,7 +209,7 @@
             this.txtAccountNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.txtAccountNumber.Location = new System.Drawing.Point(172, 22);
-            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(5);
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.Size = new System.Drawing.Size(93, 27);
             this.txtAccountNumber.TabIndex = 1;
@@ -239,7 +239,7 @@
             this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustomerEditor";

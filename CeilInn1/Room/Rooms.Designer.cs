@@ -47,9 +47,10 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(328, 285);
+            this.btnClose.Location = new System.Drawing.Point(437, 351);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // 
             // btnNewRoom
             // 
-            this.btnNewRoom.Location = new System.Drawing.Point(222, 285);
+            this.btnNewRoom.Location = new System.Drawing.Point(296, 351);
+            this.btnNewRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNewRoom.Name = "btnNewRoom";
-            this.btnNewRoom.Size = new System.Drawing.Size(100, 23);
+            this.btnNewRoom.Size = new System.Drawing.Size(133, 28);
             this.btnNewRoom.TabIndex = 7;
             this.btnNewRoom.Text = "New Room...";
             this.btnNewRoom.UseVisualStyleBackColor = true;
@@ -76,9 +78,11 @@
             this.lvwRooms.ContextMenuStrip = this.cmsRooms;
             this.lvwRooms.FullRowSelect = true;
             this.lvwRooms.GridLines = true;
-            this.lvwRooms.Location = new System.Drawing.Point(12, 14);
+            this.lvwRooms.HideSelection = false;
+            this.lvwRooms.Location = new System.Drawing.Point(16, 17);
+            this.lvwRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvwRooms.Name = "lvwRooms";
-            this.lvwRooms.Size = new System.Drawing.Size(392, 260);
+            this.lvwRooms.Size = new System.Drawing.Size(521, 319);
             this.lvwRooms.TabIndex = 6;
             this.lvwRooms.UseCompatibleStateImageBehavior = false;
             this.lvwRooms.View = System.Windows.Forms.View.Details;
@@ -109,49 +113,52 @@
             // 
             // cmsRooms
             // 
+            this.cmsRooms.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsRooms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuNewRoom,
             this.mnuInsertRoom,
             this.mnuEditRoomDetails,
             this.mnuDeleteRoom});
             this.cmsRooms.Name = "cmsRooms";
-            this.cmsRooms.Size = new System.Drawing.Size(170, 92);
+            this.cmsRooms.Size = new System.Drawing.Size(208, 100);
             // 
             // mnuNewRoom
             // 
             this.mnuNewRoom.Name = "mnuNewRoom";
-            this.mnuNewRoom.Size = new System.Drawing.Size(169, 22);
+            this.mnuNewRoom.Size = new System.Drawing.Size(207, 24);
             this.mnuNewRoom.Text = "&New Room...";
             // 
             // mnuInsertRoom
             // 
             this.mnuInsertRoom.Enabled = false;
             this.mnuInsertRoom.Name = "mnuInsertRoom";
-            this.mnuInsertRoom.Size = new System.Drawing.Size(169, 22);
+            this.mnuInsertRoom.Size = new System.Drawing.Size(207, 24);
             this.mnuInsertRoom.Text = "&Insert Room...";
             // 
             // mnuEditRoomDetails
             // 
             this.mnuEditRoomDetails.Enabled = false;
             this.mnuEditRoomDetails.Name = "mnuEditRoomDetails";
-            this.mnuEditRoomDetails.Size = new System.Drawing.Size(169, 22);
+            this.mnuEditRoomDetails.Size = new System.Drawing.Size(207, 24);
             this.mnuEditRoomDetails.Text = "&Edit Room Details...";
             // 
             // mnuDeleteRoom
             // 
             this.mnuDeleteRoom.Enabled = false;
             this.mnuDeleteRoom.Name = "mnuDeleteRoom";
-            this.mnuDeleteRoom.Size = new System.Drawing.Size(169, 22);
+            this.mnuDeleteRoom.Size = new System.Drawing.Size(207, 24);
             this.mnuDeleteRoom.Text = "&Delete Room";
             // 
             // Rooms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 321);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.ClientSize = new System.Drawing.Size(555, 395);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNewRoom);
             this.Controls.Add(this.lvwRooms);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Rooms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Rooms";

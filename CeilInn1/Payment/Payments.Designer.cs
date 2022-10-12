@@ -32,14 +32,14 @@
             this.btnNewPayment = new System.Windows.Forms.Button();
             this.lvwPayments = new System.Windows.Forms.ListView();
             this.colReceiptNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colPaymentDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colProcessedBy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colPaymentDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAccountNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colFirstDayOccupied = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLastDayOccupied = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colPhoneUse = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTotalNights = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAmountCharged = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colPhoneUse = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colSubTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTaxRate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTaxAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,9 +49,10 @@
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(1157, 251);
+            this.btnClose.Location = new System.Drawing.Point(1543, 309);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
             // btnNewPayment
             // 
             this.btnNewPayment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewPayment.Location = new System.Drawing.Point(1003, 251);
+            this.btnNewPayment.Location = new System.Drawing.Point(1337, 309);
+            this.btnNewPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNewPayment.Name = "btnNewPayment";
-            this.btnNewPayment.Size = new System.Drawing.Size(148, 23);
+            this.btnNewPayment.Size = new System.Drawing.Size(197, 28);
             this.btnNewPayment.TabIndex = 7;
             this.btnNewPayment.Text = "New Payment...";
             this.btnNewPayment.UseVisualStyleBackColor = true;
@@ -70,8 +72,8 @@
             // 
             // lvwPayments
             // 
-            this.lvwPayments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.lvwPayments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvwPayments.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colReceiptNumber,
@@ -89,9 +91,11 @@
             this.colTotalAmountPaid});
             this.lvwPayments.FullRowSelect = true;
             this.lvwPayments.GridLines = true;
-            this.lvwPayments.Location = new System.Drawing.Point(13, 12);
+            this.lvwPayments.HideSelection = false;
+            this.lvwPayments.Location = new System.Drawing.Point(17, 15);
+            this.lvwPayments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvwPayments.Name = "lvwPayments";
-            this.lvwPayments.Size = new System.Drawing.Size(1219, 225);
+            this.lvwPayments.Size = new System.Drawing.Size(1624, 276);
             this.lvwPayments.TabIndex = 6;
             this.lvwPayments.UseCompatibleStateImageBehavior = false;
             this.lvwPayments.View = System.Windows.Forms.View.Details;
@@ -100,15 +104,15 @@
             // 
             this.colReceiptNumber.Text = "Receipt #";
             // 
-            // colPaymentDate
-            // 
-            this.colPaymentDate.Text = "Payment Date";
-            this.colPaymentDate.Width = 130;
-            // 
             // colProcessedBy
             // 
             this.colProcessedBy.Text = "Processed By";
             this.colProcessedBy.Width = 140;
+            // 
+            // colPaymentDate
+            // 
+            this.colPaymentDate.Text = "Payment Date";
+            this.colPaymentDate.Width = 130;
             // 
             // colAccountNumber
             // 
@@ -125,13 +129,6 @@
             this.colLastDayOccupied.Text = "Last Day Occupied";
             this.colLastDayOccupied.Width = 140;
             // 
-            // colPhoneUse
-            // 
-            this.colPhoneUse.DisplayIndex = 7;
-            this.colPhoneUse.Text = "Phone Use";
-            this.colPhoneUse.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.colPhoneUse.Width = 65;
-            // 
             // colTotalNights
             // 
             this.colTotalNights.Text = "Total Nights";
@@ -144,6 +141,13 @@
             this.colAmountCharged.Text = "Amt Charged";
             this.colAmountCharged.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.colAmountCharged.Width = 75;
+            // 
+            // colPhoneUse
+            // 
+            this.colPhoneUse.DisplayIndex = 7;
+            this.colPhoneUse.Text = "Phone Use";
+            this.colPhoneUse.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.colPhoneUse.Width = 65;
             // 
             // colSubTotal
             // 
@@ -168,12 +172,14 @@
             // 
             // Payments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1243, 284);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.ClientSize = new System.Drawing.Size(1657, 350);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNewPayment);
             this.Controls.Add(this.lvwPayments);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Payments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Payments";

@@ -51,9 +51,10 @@
             "Queen",
             "Double",
             "Other"});
-            this.cbxBedTypes.Location = new System.Drawing.Point(99, 65);
+            this.cbxBedTypes.Location = new System.Drawing.Point(132, 80);
+            this.cbxBedTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxBedTypes.Name = "cbxBedTypes";
-            this.cbxBedTypes.Size = new System.Drawing.Size(165, 21);
+            this.cbxBedTypes.Size = new System.Drawing.Size(219, 24);
             this.cbxBedTypes.TabIndex = 5;
             // 
             // cbxRoomTypes
@@ -64,24 +65,27 @@
             "Bedroom",
             "Conference Room",
             "Other"});
-            this.cbxRoomTypes.Location = new System.Drawing.Point(99, 38);
+            this.cbxRoomTypes.Location = new System.Drawing.Point(132, 47);
+            this.cbxRoomTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxRoomTypes.Name = "cbxRoomTypes";
-            this.cbxRoomTypes.Size = new System.Drawing.Size(129, 21);
+            this.cbxRoomTypes.Size = new System.Drawing.Size(171, 24);
             this.cbxRoomTypes.TabIndex = 3;
             // 
             // txtRoomNumber
             // 
-            this.txtRoomNumber.Location = new System.Drawing.Point(99, 12);
+            this.txtRoomNumber.Location = new System.Drawing.Point(132, 15);
+            this.txtRoomNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRoomNumber.Name = "txtRoomNumber";
-            this.txtRoomNumber.Size = new System.Drawing.Size(50, 20);
+            this.txtRoomNumber.Size = new System.Drawing.Size(65, 22);
             this.txtRoomNumber.TabIndex = 1;
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(189, 156);
+            this.btnCancel.Location = new System.Drawing.Point(252, 192);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -89,18 +93,20 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(99, 156);
+            this.btnOK.Location = new System.Drawing.Point(132, 192);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(100, 28);
             this.btnOK.TabIndex = 10;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // txtRate
             // 
-            this.txtRate.Location = new System.Drawing.Point(99, 92);
+            this.txtRate.Location = new System.Drawing.Point(132, 113);
+            this.txtRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRate.Name = "txtRate";
-            this.txtRate.Size = new System.Drawing.Size(75, 20);
+            this.txtRate.Size = new System.Drawing.Size(99, 22);
             this.txtRate.TabIndex = 7;
             this.txtRate.Text = "0.00";
             this.txtRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -108,45 +114,50 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 95);
+            this.label4.Location = new System.Drawing.Point(21, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Rate:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 68);
+            this.label3.Location = new System.Drawing.Point(21, 84);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(70, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Bed Type:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 41);
+            this.label2.Location = new System.Drawing.Point(21, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(82, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Room Type:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 15);
+            this.label1.Location = new System.Drawing.Point(21, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Room Number:";
             // 
             // lblOccupancyStatus
             // 
             this.lblOccupancyStatus.AutoSize = true;
-            this.lblOccupancyStatus.Location = new System.Drawing.Point(16, 121);
+            this.lblOccupancyStatus.Location = new System.Drawing.Point(21, 149);
+            this.lblOccupancyStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOccupancyStatus.Name = "lblOccupancyStatus";
-            this.lblOccupancyStatus.Size = new System.Drawing.Size(40, 13);
+            this.lblOccupancyStatus.Size = new System.Drawing.Size(47, 16);
             this.lblOccupancyStatus.TabIndex = 8;
             this.lblOccupancyStatus.Text = "Status:";
             // 
@@ -158,18 +169,20 @@
             "Other",
             "Available",
             "Occupied"});
-            this.cbxOccupanciesStatus.Location = new System.Drawing.Point(99, 118);
+            this.cbxOccupanciesStatus.Location = new System.Drawing.Point(132, 145);
+            this.cbxOccupanciesStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxOccupanciesStatus.Name = "cbxOccupanciesStatus";
-            this.cbxOccupanciesStatus.Size = new System.Drawing.Size(165, 21);
+            this.cbxOccupanciesStatus.Size = new System.Drawing.Size(219, 24);
             this.cbxOccupanciesStatus.TabIndex = 9;
             // 
             // RoomEditor
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(282, 194);
+            this.ClientSize = new System.Drawing.Size(376, 239);
             this.Controls.Add(this.cbxOccupanciesStatus);
             this.Controls.Add(this.lblOccupancyStatus);
             this.Controls.Add(this.cbxBedTypes);
@@ -183,6 +196,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RoomEditor";

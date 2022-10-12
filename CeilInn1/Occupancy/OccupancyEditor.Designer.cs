@@ -67,7 +67,7 @@
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(327, 329);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(88, 28);
             this.btnCancel.TabIndex = 17;
@@ -78,7 +78,7 @@
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.Location = new System.Drawing.Point(231, 329);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(87, 28);
             this.btnOK.TabIndex = 16;
@@ -88,7 +88,7 @@
             // txtPhoneUse
             // 
             this.txtPhoneUse.Location = new System.Drawing.Point(332, 268);
-            this.txtPhoneUse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneUse.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneUse.Name = "txtPhoneUse";
             this.txtPhoneUse.Size = new System.Drawing.Size(81, 22);
             this.txtPhoneUse.TabIndex = 14;
@@ -108,7 +108,7 @@
             // txtRateApplied
             // 
             this.txtRateApplied.Location = new System.Drawing.Point(135, 268);
-            this.txtRateApplied.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRateApplied.Margin = new System.Windows.Forms.Padding(4);
             this.txtRateApplied.Name = "txtRateApplied";
             this.txtRateApplied.Size = new System.Drawing.Size(83, 22);
             this.txtRateApplied.TabIndex = 12;
@@ -128,7 +128,7 @@
             // txtRoomDescription
             // 
             this.txtRoomDescription.Location = new System.Drawing.Point(19, 229);
-            this.txtRoomDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRoomDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtRoomDescription.Name = "txtRoomDescription";
             this.txtRoomDescription.Size = new System.Drawing.Size(395, 22);
             this.txtRoomDescription.TabIndex = 21;
@@ -156,7 +156,7 @@
             // txtCustomerName
             // 
             this.txtCustomerName.Location = new System.Drawing.Point(227, 138);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(187, 22);
             this.txtCustomerName.TabIndex = 19;
@@ -184,7 +184,7 @@
             // txtEmployeeName
             // 
             this.txtEmployeeName.Location = new System.Drawing.Point(227, 78);
-            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(187, 22);
             this.txtEmployeeName.TabIndex = 18;
@@ -212,7 +212,7 @@
             // dtpDateOccupied
             // 
             this.dtpDateOccupied.Location = new System.Drawing.Point(135, 16);
-            this.dtpDateOccupied.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDateOccupied.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDateOccupied.Name = "dtpDateOccupied";
             this.dtpDateOccupied.Size = new System.Drawing.Size(279, 22);
             this.dtpDateOccupied.TabIndex = 1;
@@ -240,7 +240,7 @@
             // txtEmployeeNumber
             // 
             this.txtEmployeeNumber.Location = new System.Drawing.Point(135, 78);
-            this.txtEmployeeNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
             this.txtEmployeeNumber.Size = new System.Drawing.Size(83, 22);
             this.txtEmployeeNumber.TabIndex = 4;
@@ -249,7 +249,7 @@
             // txtAccountNumber
             // 
             this.txtAccountNumber.Location = new System.Drawing.Point(135, 138);
-            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.Size = new System.Drawing.Size(83, 22);
             this.txtAccountNumber.TabIndex = 7;
@@ -258,7 +258,7 @@
             // txtOccupancyNumber
             // 
             this.txtOccupancyNumber.Location = new System.Drawing.Point(135, 331);
-            this.txtOccupancyNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOccupancyNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtOccupancyNumber.Name = "txtOccupancyNumber";
             this.txtOccupancyNumber.Size = new System.Drawing.Size(80, 22);
             this.txtOccupancyNumber.TabIndex = 23;
@@ -266,7 +266,7 @@
             // txtRoomNumber
             // 
             this.txtRoomNumber.Location = new System.Drawing.Point(135, 196);
-            this.txtRoomNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRoomNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtRoomNumber.Name = "txtRoomNumber";
             this.txtRoomNumber.Size = new System.Drawing.Size(83, 22);
             this.txtRoomNumber.TabIndex = 10;
@@ -277,6 +277,7 @@
             this.AcceptButton = this.btnOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(435, 378);
             this.Controls.Add(this.txtRoomNumber);
@@ -303,7 +304,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OccupancyEditor";

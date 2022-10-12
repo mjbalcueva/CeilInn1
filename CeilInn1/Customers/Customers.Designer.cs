@@ -57,10 +57,10 @@
             this.lvwCustomers.FullRowSelect = true;
             this.lvwCustomers.GridLines = true;
             this.lvwCustomers.HideSelection = false;
-            this.lvwCustomers.Location = new System.Drawing.Point(23, 21);
-            this.lvwCustomers.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lvwCustomers.Location = new System.Drawing.Point(26, 23);
+            this.lvwCustomers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.lvwCustomers.Name = "lvwCustomers";
-            this.lvwCustomers.Size = new System.Drawing.Size(736, 257);
+            this.lvwCustomers.Size = new System.Drawing.Size(828, 287);
             this.lvwCustomers.TabIndex = 3;
             this.lvwCustomers.UseCompatibleStateImageBehavior = false;
             this.lvwCustomers.View = System.Windows.Forms.View.Details;
@@ -73,12 +73,12 @@
             // colFirstName
             // 
             this.colFirstName.Text = "First Name";
-            this.colFirstName.Width = 100;
+            this.colFirstName.Width = 150;
             // 
             // colLastName
             // 
             this.colLastName.Text = "Last Name";
-            this.colLastName.Width = 100;
+            this.colLastName.Width = 150;
             // 
             // colPhoneNumber
             // 
@@ -102,12 +102,12 @@
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Lato", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnClose.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.btnClose.Location = new System.Drawing.Point(658, 303);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnClose.Location = new System.Drawing.Point(740, 339);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(101, 29);
+            this.btnClose.Size = new System.Drawing.Size(114, 32);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -120,12 +120,12 @@
             this.btnNewCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.btnNewCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
             this.btnNewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewCustomer.Font = new System.Drawing.Font("Lato", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnNewCustomer.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnNewCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.btnNewCustomer.Location = new System.Drawing.Point(490, 303);
-            this.btnNewCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnNewCustomer.Location = new System.Drawing.Point(550, 339);
+            this.btnNewCustomer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnNewCustomer.Name = "btnNewCustomer";
-            this.btnNewCustomer.Size = new System.Drawing.Size(158, 29);
+            this.btnNewCustomer.Size = new System.Drawing.Size(178, 32);
             this.btnNewCustomer.TabIndex = 4;
             this.btnNewCustomer.Text = "New Customer...";
             this.btnNewCustomer.UseVisualStyleBackColor = true;
@@ -133,15 +133,15 @@
             // 
             // Customers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(782, 353);
+            this.ClientSize = new System.Drawing.Size(880, 395);
             this.Controls.Add(this.lvwCustomers);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNewCustomer);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
