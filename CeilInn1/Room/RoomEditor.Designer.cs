@@ -44,48 +44,61 @@
             // 
             // cbxBedTypes
             // 
+            this.cbxBedTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.cbxBedTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxBedTypes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbxBedTypes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.cbxBedTypes.FormattingEnabled = true;
             this.cbxBedTypes.Items.AddRange(new object[] {
             "King",
             "Queen",
             "Double",
             "Other"});
-            this.cbxBedTypes.Location = new System.Drawing.Point(132, 80);
-            this.cbxBedTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxBedTypes.Location = new System.Drawing.Point(148, 95);
+            this.cbxBedTypes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxBedTypes.Name = "cbxBedTypes";
-            this.cbxBedTypes.Size = new System.Drawing.Size(219, 24);
+            this.cbxBedTypes.Size = new System.Drawing.Size(246, 27);
             this.cbxBedTypes.TabIndex = 5;
             // 
             // cbxRoomTypes
             // 
+            this.cbxRoomTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.cbxRoomTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRoomTypes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbxRoomTypes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.cbxRoomTypes.FormattingEnabled = true;
             this.cbxRoomTypes.Items.AddRange(new object[] {
             "Bedroom",
             "Conference Room",
             "Other"});
-            this.cbxRoomTypes.Location = new System.Drawing.Point(132, 47);
-            this.cbxRoomTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxRoomTypes.Location = new System.Drawing.Point(148, 55);
+            this.cbxRoomTypes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxRoomTypes.Name = "cbxRoomTypes";
-            this.cbxRoomTypes.Size = new System.Drawing.Size(171, 24);
+            this.cbxRoomTypes.Size = new System.Drawing.Size(192, 27);
             this.cbxRoomTypes.TabIndex = 3;
             // 
             // txtRoomNumber
             // 
-            this.txtRoomNumber.Location = new System.Drawing.Point(132, 15);
-            this.txtRoomNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRoomNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtRoomNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtRoomNumber.Location = new System.Drawing.Point(148, 17);
+            this.txtRoomNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRoomNumber.Name = "txtRoomNumber";
-            this.txtRoomNumber.Size = new System.Drawing.Size(65, 22);
+            this.txtRoomNumber.Size = new System.Drawing.Size(73, 27);
             this.txtRoomNumber.TabIndex = 1;
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(252, 192);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnCancel.Location = new System.Drawing.Point(284, 228);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
+            this.btnCancel.Size = new System.Drawing.Size(112, 33);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -93,20 +106,27 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(132, 192);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnOK.Location = new System.Drawing.Point(148, 228);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(100, 28);
+            this.btnOK.Size = new System.Drawing.Size(112, 33);
             this.btnOK.TabIndex = 10;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // txtRate
             // 
-            this.txtRate.Location = new System.Drawing.Point(132, 113);
-            this.txtRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtRate.Location = new System.Drawing.Point(148, 135);
+            this.txtRate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRate.Name = "txtRate";
-            this.txtRate.Size = new System.Drawing.Size(99, 22);
+            this.txtRate.Size = new System.Drawing.Size(110, 27);
             this.txtRate.TabIndex = 7;
             this.txtRate.Text = "0.00";
             this.txtRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -114,75 +134,83 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 117);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(24, 139);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 16);
+            this.label4.Size = new System.Drawing.Size(45, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Rate:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 84);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(24, 100);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.Size = new System.Drawing.Size(76, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Bed Type:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 50);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(24, 60);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 16);
+            this.label2.Size = new System.Drawing.Size(90, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Room Type:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 18);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(24, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.Size = new System.Drawing.Size(114, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Room Number:";
             // 
             // lblOccupancyStatus
             // 
             this.lblOccupancyStatus.AutoSize = true;
-            this.lblOccupancyStatus.Location = new System.Drawing.Point(21, 149);
+            this.lblOccupancyStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblOccupancyStatus.Location = new System.Drawing.Point(24, 177);
             this.lblOccupancyStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOccupancyStatus.Name = "lblOccupancyStatus";
-            this.lblOccupancyStatus.Size = new System.Drawing.Size(47, 16);
+            this.lblOccupancyStatus.Size = new System.Drawing.Size(57, 19);
             this.lblOccupancyStatus.TabIndex = 8;
             this.lblOccupancyStatus.Text = "Status:";
             // 
             // cbxOccupanciesStatus
             // 
+            this.cbxOccupanciesStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.cbxOccupanciesStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxOccupanciesStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbxOccupanciesStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.cbxOccupanciesStatus.FormattingEnabled = true;
             this.cbxOccupanciesStatus.Items.AddRange(new object[] {
             "Other",
             "Available",
             "Occupied"});
-            this.cbxOccupanciesStatus.Location = new System.Drawing.Point(132, 145);
-            this.cbxOccupanciesStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOccupanciesStatus.Location = new System.Drawing.Point(148, 173);
+            this.cbxOccupanciesStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxOccupanciesStatus.Name = "cbxOccupanciesStatus";
-            this.cbxOccupanciesStatus.Size = new System.Drawing.Size(219, 24);
+            this.cbxOccupanciesStatus.Size = new System.Drawing.Size(246, 27);
             this.cbxOccupanciesStatus.TabIndex = 9;
             // 
             // RoomEditor
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(376, 239);
+            this.ClientSize = new System.Drawing.Size(423, 283);
             this.Controls.Add(this.cbxOccupanciesStatus);
             this.Controls.Add(this.lblOccupancyStatus);
             this.Controls.Add(this.cbxBedTypes);
@@ -195,8 +223,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RoomEditor";

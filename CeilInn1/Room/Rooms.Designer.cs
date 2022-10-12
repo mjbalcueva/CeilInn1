@@ -47,10 +47,15 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(437, 351);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnClose.Location = new System.Drawing.Point(492, 416);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 28);
+            this.btnClose.Size = new System.Drawing.Size(112, 33);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -58,10 +63,15 @@
             // 
             // btnNewRoom
             // 
-            this.btnNewRoom.Location = new System.Drawing.Point(296, 351);
-            this.btnNewRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewRoom.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnNewRoom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnNewRoom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnNewRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnNewRoom.Location = new System.Drawing.Point(333, 416);
+            this.btnNewRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNewRoom.Name = "btnNewRoom";
-            this.btnNewRoom.Size = new System.Drawing.Size(133, 28);
+            this.btnNewRoom.Size = new System.Drawing.Size(150, 33);
             this.btnNewRoom.TabIndex = 7;
             this.btnNewRoom.Text = "New Room...";
             this.btnNewRoom.UseVisualStyleBackColor = true;
@@ -69,6 +79,7 @@
             // 
             // lvwRooms
             // 
+            this.lvwRooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.lvwRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colRoomNumber,
             this.colRoomType,
@@ -76,13 +87,14 @@
             this.colRate,
             this.colOccupancyStatus});
             this.lvwRooms.ContextMenuStrip = this.cmsRooms;
+            this.lvwRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.lvwRooms.FullRowSelect = true;
             this.lvwRooms.GridLines = true;
             this.lvwRooms.HideSelection = false;
-            this.lvwRooms.Location = new System.Drawing.Point(16, 17);
-            this.lvwRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvwRooms.Location = new System.Drawing.Point(18, 21);
+            this.lvwRooms.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lvwRooms.Name = "lvwRooms";
-            this.lvwRooms.Size = new System.Drawing.Size(521, 319);
+            this.lvwRooms.Size = new System.Drawing.Size(586, 378);
             this.lvwRooms.TabIndex = 6;
             this.lvwRooms.UseCompatibleStateImageBehavior = false;
             this.lvwRooms.View = System.Windows.Forms.View.Details;
@@ -120,45 +132,46 @@
             this.mnuEditRoomDetails,
             this.mnuDeleteRoom});
             this.cmsRooms.Name = "cmsRooms";
-            this.cmsRooms.Size = new System.Drawing.Size(208, 100);
+            this.cmsRooms.Size = new System.Drawing.Size(177, 92);
             // 
             // mnuNewRoom
             // 
             this.mnuNewRoom.Name = "mnuNewRoom";
-            this.mnuNewRoom.Size = new System.Drawing.Size(207, 24);
+            this.mnuNewRoom.Size = new System.Drawing.Size(176, 22);
             this.mnuNewRoom.Text = "&New Room...";
             // 
             // mnuInsertRoom
             // 
             this.mnuInsertRoom.Enabled = false;
             this.mnuInsertRoom.Name = "mnuInsertRoom";
-            this.mnuInsertRoom.Size = new System.Drawing.Size(207, 24);
+            this.mnuInsertRoom.Size = new System.Drawing.Size(176, 22);
             this.mnuInsertRoom.Text = "&Insert Room...";
             // 
             // mnuEditRoomDetails
             // 
             this.mnuEditRoomDetails.Enabled = false;
             this.mnuEditRoomDetails.Name = "mnuEditRoomDetails";
-            this.mnuEditRoomDetails.Size = new System.Drawing.Size(207, 24);
+            this.mnuEditRoomDetails.Size = new System.Drawing.Size(176, 22);
             this.mnuEditRoomDetails.Text = "&Edit Room Details...";
             // 
             // mnuDeleteRoom
             // 
             this.mnuDeleteRoom.Enabled = false;
             this.mnuDeleteRoom.Name = "mnuDeleteRoom";
-            this.mnuDeleteRoom.Size = new System.Drawing.Size(207, 24);
+            this.mnuDeleteRoom.Size = new System.Drawing.Size(176, 22);
             this.mnuDeleteRoom.Text = "&Delete Room";
             // 
             // Rooms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(555, 395);
+            this.ClientSize = new System.Drawing.Size(624, 469);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNewRoom);
             this.Controls.Add(this.lvwRooms);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Rooms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ceil Inn - Rooms";

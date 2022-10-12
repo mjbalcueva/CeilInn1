@@ -42,10 +42,15 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1063, 454);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnClose.Location = new System.Drawing.Point(1070, 544);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 28);
+            this.btnClose.Size = new System.Drawing.Size(112, 33);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -53,10 +58,15 @@
             // 
             // btnNewOccupancy
             // 
-            this.btnNewOccupancy.Location = new System.Drawing.Point(885, 454);
-            this.btnNewOccupancy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewOccupancy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnNewOccupancy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnNewOccupancy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnNewOccupancy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewOccupancy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnNewOccupancy.Location = new System.Drawing.Point(872, 544);
+            this.btnNewOccupancy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNewOccupancy.Name = "btnNewOccupancy";
-            this.btnNewOccupancy.Size = new System.Drawing.Size(169, 28);
+            this.btnNewOccupancy.Size = new System.Drawing.Size(190, 33);
             this.btnNewOccupancy.TabIndex = 4;
             this.btnNewOccupancy.Text = "New Occupancy...";
             this.btnNewOccupancy.UseVisualStyleBackColor = true;
@@ -64,6 +74,7 @@
             // 
             // lvwOccupancies
             // 
+            this.lvwOccupancies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.lvwOccupancies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colOccupancyNumber,
             this.colDateOccupied,
@@ -72,13 +83,14 @@
             this.colRoomOccupied,
             this.colRateApplied,
             this.colPhoneUse});
+            this.lvwOccupancies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.lvwOccupancies.FullRowSelect = true;
             this.lvwOccupancies.GridLines = true;
             this.lvwOccupancies.HideSelection = false;
-            this.lvwOccupancies.Location = new System.Drawing.Point(17, 16);
-            this.lvwOccupancies.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvwOccupancies.Location = new System.Drawing.Point(21, 19);
+            this.lvwOccupancies.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lvwOccupancies.Name = "lvwOccupancies";
-            this.lvwOccupancies.Size = new System.Drawing.Size(1144, 424);
+            this.lvwOccupancies.Size = new System.Drawing.Size(1161, 503);
             this.lvwOccupancies.TabIndex = 3;
             this.lvwOccupancies.UseCompatibleStateImageBehavior = false;
             this.lvwOccupancies.View = System.Windows.Forms.View.Details;
@@ -122,14 +134,15 @@
             // 
             // Occupancies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(1180, 497);
+            this.ClientSize = new System.Drawing.Size(1203, 591);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNewOccupancy);
             this.Controls.Add(this.lvwOccupancies);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Occupancies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
