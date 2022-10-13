@@ -69,42 +69,65 @@
             // 
             // txtReceiptNumber
             // 
-            this.txtReceiptNumber.Location = new System.Drawing.Point(87, 470);
+            this.txtReceiptNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtReceiptNumber.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtReceiptNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtReceiptNumber.Location = new System.Drawing.Point(126, 626);
+            this.txtReceiptNumber.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtReceiptNumber.Name = "txtReceiptNumber";
-            this.txtReceiptNumber.Size = new System.Drawing.Size(61, 20);
+            this.txtReceiptNumber.Size = new System.Drawing.Size(91, 27);
             this.txtReceiptNumber.TabIndex = 46;
             // 
             // txtAccountNumber
             // 
-            this.txtAccountNumber.Location = new System.Drawing.Point(130, 114);
+            this.txtAccountNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtAccountNumber.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtAccountNumber.Location = new System.Drawing.Point(195, 144);
+            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtAccountNumber.Name = "txtAccountNumber";
-            this.txtAccountNumber.Size = new System.Drawing.Size(63, 20);
+            this.txtAccountNumber.Size = new System.Drawing.Size(91, 27);
             this.txtAccountNumber.TabIndex = 31;
             this.txtAccountNumber.Leave += new System.EventHandler(this.TxtAccountNumber_Leave);
             // 
             // txtEmployeeNumber
             // 
-            this.txtEmployeeNumber.Location = new System.Drawing.Point(130, 65);
+            this.txtEmployeeNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtEmployeeNumber.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmployeeNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtEmployeeNumber.Location = new System.Drawing.Point(195, 86);
+            this.txtEmployeeNumber.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
-            this.txtEmployeeNumber.Size = new System.Drawing.Size(63, 20);
+            this.txtEmployeeNumber.Size = new System.Drawing.Size(91, 27);
             this.txtEmployeeNumber.TabIndex = 28;
             this.txtEmployeeNumber.Leave += new System.EventHandler(this.TxtEmployeeNumber_Leave);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(-1, 443);
+            this.label11.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label11.Location = new System.Drawing.Point(12, 596);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(337, 13);
+            this.label11.Size = new System.Drawing.Size(501, 19);
             this.label11.TabIndex = 39;
-            this.label11.Text = "_______________________________________________________";
+            this.label11.Text = "_________________________________________________________________________________" +
+    "_";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(271, 468);
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnCancel.Location = new System.Drawing.Point(402, 623);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(66, 23);
+            this.btnCancel.Size = new System.Drawing.Size(99, 32);
             this.btnCancel.TabIndex = 42;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -112,152 +135,201 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(200, 468);
+            this.btnOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnOK.Location = new System.Drawing.Point(297, 623);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(65, 23);
+            this.btnOK.Size = new System.Drawing.Size(99, 32);
             this.btnOK.TabIndex = 41;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // txtAccountDetails
             // 
-            this.txtAccountDetails.Location = new System.Drawing.Point(130, 140);
+            this.txtAccountDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtAccountDetails.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAccountDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtAccountDetails.Location = new System.Drawing.Point(195, 183);
+            this.txtAccountDetails.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtAccountDetails.Name = "txtAccountDetails";
-            this.txtAccountDetails.Size = new System.Drawing.Size(200, 20);
+            this.txtAccountDetails.Size = new System.Drawing.Size(298, 27);
             this.txtAccountDetails.TabIndex = 45;
             // 
             // lblAccountNumber
             // 
             this.lblAccountNumber.AutoSize = true;
-            this.lblAccountNumber.Location = new System.Drawing.Point(54, 117);
+            this.lblAccountNumber.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblAccountNumber.Location = new System.Drawing.Point(81, 150);
             this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(60, 13);
+            this.lblAccountNumber.Size = new System.Drawing.Size(83, 19);
             this.lblAccountNumber.TabIndex = 30;
             this.lblAccountNumber.Text = "Account #:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 91);
+            this.label6.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(15, 119);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(320, 13);
+            this.label6.Size = new System.Drawing.Size(490, 19);
             this.label6.TabIndex = 29;
-            this.label6.Text = "Processed for Customer _________________________________";
+            this.label6.Text = "Processed for Customer ____________________________________________________";
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(199, 65);
+            this.txtEmployeeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtEmployeeName.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmployeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtEmployeeName.Location = new System.Drawing.Point(297, 86);
+            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.Size = new System.Drawing.Size(131, 20);
+            this.txtEmployeeName.Size = new System.Drawing.Size(193, 27);
             this.txtEmployeeName.TabIndex = 43;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 68);
+            this.label4.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(81, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 27;
             this.label4.Text = "Employee #:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 42);
+            this.label3.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(12, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(322, 13);
+            this.label3.Size = new System.Drawing.Size(486, 19);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Payment Processed by __________________________________";
+            this.label3.Text = "Payment Processed by _____________________________________________________";
             // 
             // dtpPaymentDate
             // 
-            this.dtpPaymentDate.Location = new System.Drawing.Point(130, 19);
+            this.dtpPaymentDate.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dtpPaymentDate.Location = new System.Drawing.Point(195, 28);
+            this.dtpPaymentDate.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.dtpPaymentDate.Name = "dtpPaymentDate";
-            this.dtpPaymentDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpPaymentDate.Size = new System.Drawing.Size(298, 27);
             this.dtpPaymentDate.TabIndex = 25;
             // 
             // lblPaymentDate
             // 
             this.lblPaymentDate.AutoSize = true;
-            this.lblPaymentDate.Location = new System.Drawing.Point(11, 19);
+            this.lblPaymentDate.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPaymentDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblPaymentDate.Location = new System.Drawing.Point(15, 28);
             this.lblPaymentDate.Name = "lblPaymentDate";
-            this.lblPaymentDate.Size = new System.Drawing.Size(77, 13);
+            this.lblPaymentDate.Size = new System.Drawing.Size(112, 19);
             this.lblPaymentDate.TabIndex = 24;
             this.lblPaymentDate.Text = "Payment Date:";
             // 
             // lblReceiptNumber
             // 
             this.lblReceiptNumber.AutoSize = true;
-            this.lblReceiptNumber.Location = new System.Drawing.Point(11, 473);
+            this.lblReceiptNumber.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblReceiptNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblReceiptNumber.Location = new System.Drawing.Point(12, 632);
             this.lblReceiptNumber.Name = "lblReceiptNumber";
-            this.lblReceiptNumber.Size = new System.Drawing.Size(57, 13);
+            this.lblReceiptNumber.Size = new System.Drawing.Size(77, 19);
             this.lblReceiptNumber.TabIndex = 40;
             this.lblReceiptNumber.Text = "Receipt #:";
             // 
             // lblRoomOccupiedFrom
             // 
             this.lblRoomOccupiedFrom.AutoSize = true;
-            this.lblRoomOccupiedFrom.Location = new System.Drawing.Point(11, 173);
+            this.lblRoomOccupiedFrom.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRoomOccupiedFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblRoomOccupiedFrom.Location = new System.Drawing.Point(15, 225);
             this.lblRoomOccupiedFrom.Name = "lblRoomOccupiedFrom";
-            this.lblRoomOccupiedFrom.Size = new System.Drawing.Size(113, 13);
+            this.lblRoomOccupiedFrom.Size = new System.Drawing.Size(163, 19);
             this.lblRoomOccupiedFrom.TabIndex = 47;
             this.lblRoomOccupiedFrom.Text = "Room Occupied From:";
             // 
             // dtpFirstDateOccupied
             // 
-            this.dtpFirstDateOccupied.Location = new System.Drawing.Point(130, 170);
+            this.dtpFirstDateOccupied.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dtpFirstDateOccupied.Location = new System.Drawing.Point(195, 222);
+            this.dtpFirstDateOccupied.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.dtpFirstDateOccupied.Name = "dtpFirstDateOccupied";
-            this.dtpFirstDateOccupied.Size = new System.Drawing.Size(200, 20);
+            this.dtpFirstDateOccupied.Size = new System.Drawing.Size(298, 27);
             this.dtpFirstDateOccupied.TabIndex = 48;
             // 
             // dtpLastDateOccupied
             // 
-            this.dtpLastDateOccupied.Location = new System.Drawing.Point(130, 200);
+            this.dtpLastDateOccupied.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dtpLastDateOccupied.Location = new System.Drawing.Point(195, 261);
+            this.dtpLastDateOccupied.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.dtpLastDateOccupied.Name = "dtpLastDateOccupied";
-            this.dtpLastDateOccupied.Size = new System.Drawing.Size(200, 20);
+            this.dtpLastDateOccupied.Size = new System.Drawing.Size(298, 27);
             this.dtpLastDateOccupied.TabIndex = 50;
             // 
             // lblLastDateOccupied
             // 
             this.lblLastDateOccupied.AutoSize = true;
-            this.lblLastDateOccupied.Location = new System.Drawing.Point(98, 200);
+            this.lblLastDateOccupied.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLastDateOccupied.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblLastDateOccupied.Location = new System.Drawing.Point(147, 261);
             this.lblLastDateOccupied.Name = "lblLastDateOccupied";
-            this.lblLastDateOccupied.Size = new System.Drawing.Size(23, 13);
+            this.lblLastDateOccupied.Size = new System.Drawing.Size(29, 19);
             this.lblLastDateOccupied.TabIndex = 49;
             this.lblLastDateOccupied.Text = "To:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 256);
+            this.label1.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(16, 325);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 13);
+            this.label1.Size = new System.Drawing.Size(488, 19);
             this.label1.TabIndex = 51;
-            this.label1.Text = "Payment _____________________________________________";
+            this.label1.Text = "Payment _____________________________________________________________________";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(172, 236);
+            this.label2.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(255, 306);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(96, 19);
             this.label2.TabIndex = 52;
             this.label2.Text = "Total Nights:";
             // 
             // txtTotalNights
             // 
-            this.txtTotalNights.Location = new System.Drawing.Point(244, 233);
+            this.txtTotalNights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtTotalNights.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTotalNights.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtTotalNights.Location = new System.Drawing.Point(363, 300);
+            this.txtTotalNights.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtTotalNights.Name = "txtTotalNights";
-            this.txtTotalNights.Size = new System.Drawing.Size(48, 20);
+            this.txtTotalNights.Size = new System.Drawing.Size(70, 27);
             this.txtTotalNights.TabIndex = 53;
             this.txtTotalNights.Text = "1";
             this.txtTotalNights.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAmountCharged
             // 
-            this.txtAmountCharged.Location = new System.Drawing.Point(243, 283);
+            this.txtAmountCharged.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtAmountCharged.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAmountCharged.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtAmountCharged.Location = new System.Drawing.Point(363, 349);
+            this.txtAmountCharged.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtAmountCharged.Name = "txtAmountCharged";
-            this.txtAmountCharged.Size = new System.Drawing.Size(49, 20);
+            this.txtAmountCharged.Size = new System.Drawing.Size(73, 27);
             this.txtAmountCharged.TabIndex = 55;
             this.txtAmountCharged.Text = "0.00";
             this.txtAmountCharged.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -265,17 +337,23 @@
             // lblAmountCharged
             // 
             this.lblAmountCharged.AutoSize = true;
-            this.lblAmountCharged.Location = new System.Drawing.Point(169, 286);
+            this.lblAmountCharged.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblAmountCharged.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblAmountCharged.Location = new System.Drawing.Point(255, 355);
             this.lblAmountCharged.Name = "lblAmountCharged";
-            this.lblAmountCharged.Size = new System.Drawing.Size(71, 13);
+            this.lblAmountCharged.Size = new System.Drawing.Size(105, 19);
             this.lblAmountCharged.TabIndex = 54;
             this.lblAmountCharged.Text = "Amt Charged:";
             // 
             // txtTaxRate
             // 
-            this.txtTaxRate.Location = new System.Drawing.Point(232, 368);
+            this.txtTaxRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtTaxRate.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTaxRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtTaxRate.Location = new System.Drawing.Point(348, 487);
+            this.txtTaxRate.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtTaxRate.Name = "txtTaxRate";
-            this.txtTaxRate.Size = new System.Drawing.Size(60, 20);
+            this.txtTaxRate.Size = new System.Drawing.Size(88, 27);
             this.txtTaxRate.TabIndex = 57;
             this.txtTaxRate.Text = "7.70";
             this.txtTaxRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -283,17 +361,26 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(153, 371);
+            this.label7.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label7.Location = new System.Drawing.Point(231, 491);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.Size = new System.Drawing.Size(71, 19);
             this.label7.TabIndex = 56;
             this.label7.Text = "Tax Rate:";
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(159, 335);
+            this.btnCalculate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalculate.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnCalculate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnCalculate.Location = new System.Drawing.Point(235, 427);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(133, 23);
+            this.btnCalculate.Size = new System.Drawing.Size(201, 32);
             this.btnCalculate.TabIndex = 58;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -301,9 +388,13 @@
             // 
             // txtTotalAmountPaid
             // 
-            this.txtTotalAmountPaid.Location = new System.Drawing.Point(232, 420);
+            this.txtTotalAmountPaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtTotalAmountPaid.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTotalAmountPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtTotalAmountPaid.Location = new System.Drawing.Point(348, 565);
+            this.txtTotalAmountPaid.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtTotalAmountPaid.Name = "txtTotalAmountPaid";
-            this.txtTotalAmountPaid.Size = new System.Drawing.Size(60, 20);
+            this.txtTotalAmountPaid.Size = new System.Drawing.Size(88, 27);
             this.txtTotalAmountPaid.TabIndex = 62;
             this.txtTotalAmountPaid.Text = "0.00";
             this.txtTotalAmountPaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -311,17 +402,23 @@
             // lblAmountPaid
             // 
             this.lblAmountPaid.AutoSize = true;
-            this.lblAmountPaid.Location = new System.Drawing.Point(156, 423);
+            this.lblAmountPaid.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblAmountPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblAmountPaid.Location = new System.Drawing.Point(234, 569);
             this.lblAmountPaid.Name = "lblAmountPaid";
-            this.lblAmountPaid.Size = new System.Drawing.Size(70, 13);
+            this.lblAmountPaid.Size = new System.Drawing.Size(104, 19);
             this.lblAmountPaid.TabIndex = 61;
             this.lblAmountPaid.Text = "Amount Paid:";
             // 
             // txtTaxAmount
             // 
-            this.txtTaxAmount.Location = new System.Drawing.Point(232, 394);
+            this.txtTaxAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtTaxAmount.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTaxAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtTaxAmount.Location = new System.Drawing.Point(348, 526);
+            this.txtTaxAmount.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtTaxAmount.Name = "txtTaxAmount";
-            this.txtTaxAmount.Size = new System.Drawing.Size(60, 20);
+            this.txtTaxAmount.Size = new System.Drawing.Size(88, 27);
             this.txtTaxAmount.TabIndex = 60;
             this.txtTaxAmount.Text = "0.00";
             this.txtTaxAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -329,35 +426,46 @@
             // lblTaxAmount
             // 
             this.lblTaxAmount.AutoSize = true;
-            this.lblTaxAmount.Location = new System.Drawing.Point(153, 397);
+            this.lblTaxAmount.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblTaxAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblTaxAmount.Location = new System.Drawing.Point(231, 530);
             this.lblTaxAmount.Name = "lblTaxAmount";
-            this.lblTaxAmount.Size = new System.Drawing.Size(67, 13);
+            this.lblTaxAmount.Size = new System.Drawing.Size(96, 19);
             this.lblTaxAmount.TabIndex = 59;
             this.lblTaxAmount.Text = "Tax Amount:";
+            this.lblTaxAmount.Click += new System.EventHandler(this.lblTaxAmount_Click);
             // 
             // lblPercent
             // 
             this.lblPercent.AutoSize = true;
-            this.lblPercent.Location = new System.Drawing.Point(295, 371);
+            this.lblPercent.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPercent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblPercent.Location = new System.Drawing.Point(442, 490);
             this.lblPercent.Name = "lblPercent";
-            this.lblPercent.Size = new System.Drawing.Size(15, 13);
+            this.lblPercent.Size = new System.Drawing.Size(22, 19);
             this.lblPercent.TabIndex = 63;
             this.lblPercent.Text = "%";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(295, 286);
+            this.label8.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label8.Location = new System.Drawing.Point(441, 355);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(50, 19);
             this.label8.TabIndex = 64;
             this.label8.Text = "/night";
             // 
             // txtSubTotal
             // 
-            this.txtSubTotal.Location = new System.Drawing.Point(243, 309);
+            this.txtSubTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtSubTotal.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSubTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtSubTotal.Location = new System.Drawing.Point(363, 388);
+            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(49, 20);
+            this.txtSubTotal.Size = new System.Drawing.Size(73, 27);
             this.txtSubTotal.TabIndex = 66;
             this.txtSubTotal.Text = "0.00";
             this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -365,17 +473,23 @@
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
-            this.lblSubTotal.Location = new System.Drawing.Point(169, 312);
+            this.lblSubTotal.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSubTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblSubTotal.Location = new System.Drawing.Point(255, 394);
             this.lblSubTotal.Name = "lblSubTotal";
-            this.lblSubTotal.Size = new System.Drawing.Size(56, 13);
+            this.lblSubTotal.Size = new System.Drawing.Size(78, 19);
             this.lblSubTotal.TabIndex = 65;
             this.lblSubTotal.Text = "Sub-Total:";
             // 
             // txtPhoneUse
             // 
-            this.txtPhoneUse.Location = new System.Drawing.Point(87, 283);
+            this.txtPhoneUse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtPhoneUse.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPhoneUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtPhoneUse.Location = new System.Drawing.Point(129, 349);
+            this.txtPhoneUse.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtPhoneUse.Name = "txtPhoneUse";
-            this.txtPhoneUse.Size = new System.Drawing.Size(49, 20);
+            this.txtPhoneUse.Size = new System.Drawing.Size(73, 27);
             this.txtPhoneUse.TabIndex = 68;
             this.txtPhoneUse.Text = "0.00";
             this.txtPhoneUse.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -383,19 +497,22 @@
             // lblPhoneUse
             // 
             this.lblPhoneUse.AutoSize = true;
-            this.lblPhoneUse.Location = new System.Drawing.Point(13, 286);
+            this.lblPhoneUse.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPhoneUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblPhoneUse.Location = new System.Drawing.Point(21, 355);
             this.lblPhoneUse.Name = "lblPhoneUse";
-            this.lblPhoneUse.Size = new System.Drawing.Size(63, 13);
+            this.lblPhoneUse.Size = new System.Drawing.Size(88, 19);
             this.lblPhoneUse.TabIndex = 67;
             this.lblPhoneUse.Text = "Phone Use:";
             // 
             // PaymentEditor
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(349, 507);
+            this.ClientSize = new System.Drawing.Size(525, 670);
             this.Controls.Add(this.txtPhoneUse);
             this.Controls.Add(this.lblPhoneUse);
             this.Controls.Add(this.txtSubTotal);
@@ -433,7 +550,9 @@
             this.Controls.Add(this.dtpPaymentDate);
             this.Controls.Add(this.lblPaymentDate);
             this.Controls.Add(this.lblReceiptNumber);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PaymentEditor";
