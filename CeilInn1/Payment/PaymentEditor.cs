@@ -95,5 +95,10 @@ namespace CeilInn1
                 }
             }
         }
+
+        private void lblTaxAmount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
