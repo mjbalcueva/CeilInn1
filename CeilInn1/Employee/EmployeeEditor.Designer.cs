@@ -43,9 +43,15 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(205, 128);
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(29)))), ((int)(((byte)(72)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnCancel.Location = new System.Drawing.Point(307, 188);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(112, 33);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -53,84 +59,115 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(115, 128);
+            this.btnOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.btnOK.Location = new System.Drawing.Point(172, 188);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(112, 33);
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(115, 94);
+            this.txtTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtTitle.Location = new System.Drawing.Point(172, 138);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(165, 20);
+            this.txtTitle.Size = new System.Drawing.Size(246, 27);
             this.txtTitle.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 95);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(17, 139);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.Size = new System.Drawing.Size(44, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Title:";
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(115, 68);
+            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtLastName.Location = new System.Drawing.Point(172, 100);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(93, 20);
+            this.txtLastName.Size = new System.Drawing.Size(138, 27);
             this.txtLastName.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 71);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(18, 103);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(86, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name:";
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(115, 42);
+            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtFirstName.Location = new System.Drawing.Point(172, 62);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(93, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(138, 27);
             this.txtFirstName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(18, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "First Name:";
             // 
             // lblEmployeeNumber
             // 
             this.lblEmployeeNumber.AutoSize = true;
-            this.lblEmployeeNumber.Location = new System.Drawing.Point(12, 17);
+            this.lblEmployeeNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lblEmployeeNumber.Location = new System.Drawing.Point(18, 25);
+            this.lblEmployeeNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmployeeNumber.Name = "lblEmployeeNumber";
-            this.lblEmployeeNumber.Size = new System.Drawing.Size(96, 13);
+            this.lblEmployeeNumber.Size = new System.Drawing.Size(141, 19);
             this.lblEmployeeNumber.TabIndex = 0;
             this.lblEmployeeNumber.Text = "Employee Number:";
             // 
             // txtEmployeeNumber
             // 
-            this.txtEmployeeNumber.Location = new System.Drawing.Point(115, 14);
+            this.txtEmployeeNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txtEmployeeNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmployeeNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.txtEmployeeNumber.Location = new System.Drawing.Point(172, 25);
+            this.txtEmployeeNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmployeeNumber.Name = "txtEmployeeNumber";
-            this.txtEmployeeNumber.Size = new System.Drawing.Size(63, 20);
+            this.txtEmployeeNumber.Size = new System.Drawing.Size(93, 27);
             this.txtEmployeeNumber.TabIndex = 1;
             // 
             // EmployeeEditor
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(298, 164);
+            this.ClientSize = new System.Drawing.Size(447, 240);
             this.Controls.Add(this.txtEmployeeNumber);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
@@ -141,7 +178,9 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblEmployeeNumber);
+            this.Font = new System.Drawing.Font("Lato", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EmployeeEditor";
